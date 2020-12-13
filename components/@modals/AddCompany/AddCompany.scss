@@ -1,0 +1,20 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.add-company-modal {
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-body {
+    background-color: #f5f6f8;
+    padding: 20px 30px;
+    .logospan {
+      width: 100px;
+    }
+    .core-input-label {
+      width: 80px;
+    }
+  }
+}

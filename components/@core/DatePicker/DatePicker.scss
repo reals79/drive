@@ -1,0 +1,136 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+
+.rc-calendar-picker {
+  z-index: 1050 !important;
+}
+
+.ds-datepicker {
+  position: relative;
+
+  .ds-datepicker-input {
+    display: flex;
+    i {
+      margin-top: 1px;
+    }
+    .clear {
+      display: none !important;
+    }
+    .delete {
+      display: none !important;
+    }
+    &.horizontal {
+      flex-direction: row;
+    }
+    &.vertical {
+      flex-direction: column;
+    }
+    &.primary {
+      span {
+        color: $primary;
+      }
+    }
+    &.secondary {
+      span {
+        color: $light-grey;
+      }
+    }
+  }
+
+  .ds-datepicker-content {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    margin-top: 10px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+
+    &.left {
+      left: 0;
+    }
+    &.right {
+      right: 0;
+    }
+  }
+
+  .custom-month-picker {
+    .rc-calendar {
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 1px 5px 1px #ccc;
+      margin-top: 20px;
+    }
+
+    .rc-calendar-month-calendar-content {
+      .rc-calendar-month-header-wrap {
+        height: 250px;
+
+        .rc-calendar-month-panel {
+          border-radius: 5px;
+
+          .rc-calendar-month-panel-header {
+            height: 50px;
+            line-height: 45px;
+            border: none;
+
+            a {
+              color: $light-grey;
+              font-size: 17px;
+            }
+
+            .rc-calendar-month-panel-year-select {
+              color: $dark-grey;
+            }
+
+            .rc-calendar-month-panel-prev-year-btn,
+            .rc-calendar-month-panel-next-year-btn {
+              font-family: 'Font Awesome 5 Pro';
+              font-weight: 300;
+              font-size: 25px;
+            }
+
+            .rc-calendar-month-panel-prev-year-btn {
+              left: 10px;
+
+              &::after {
+                content: '\f104';
+              }
+            }
+
+            .rc-calendar-month-panel-next-year-btn {
+              right: 10px;
+
+              &::after {
+                content: '\f105';
+              }
+            }
+          }
+
+          .rc-calendar-month-panel-body {
+            .rc-calendar-month-panel-tbody {
+              border-top: 1px solid $light;
+
+              .rc-calendar-month-panel-cell {
+                .rc-calendar-month-panel-month {
+                  width: 36px;
+                  height: 36px;
+                  border-radius: 20px;
+                }
+
+                &.rc-calendar-month-panel-selected-cell {
+                  .rc-calendar-month-panel-month {
+                    color: #0086fd;
+                    background-color: #d2e6ff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

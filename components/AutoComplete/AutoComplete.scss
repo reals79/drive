@@ -1,0 +1,31 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.auto-search-complete {
+  position: relative;
+
+  .core-input.auto-search-input {
+    .core-input-content {
+      input {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .search-options {
+    padding: 10px;
+    background-color: #f6f7f8;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    .search-options-item {
+      padding: 11px 0;
+      cursor: pointer;
+
+      .auto-search-highlighter {
+        padding: 0;
+        background-color: transparent;
+      }
+    }
+  }
+}

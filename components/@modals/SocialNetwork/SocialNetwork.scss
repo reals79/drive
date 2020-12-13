@@ -1,0 +1,14 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.social-network-modal {
+  i.fab {
+    width: 20px;
+  }
+  .core-input {
+    width: 100%;
+
+    .core-input-label {
+      width: 70px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.vendor-search-products {
+  .vendor-search-product-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $border-grey;
+  }
+
+  .vendor-search-product-item {
+    padding: 10px 0;
+
+    &.detail {
+      border-bottom: 1px solid $border-grey;
+    }
+  }
+}

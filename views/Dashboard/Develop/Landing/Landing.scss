@@ -1,0 +1,349 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.develop-landing {
+  margin-top: -$header-height;
+  background-color: white;
+
+  .section {
+    width: 100%;
+    overflow: hidden;
+    .container {
+      .section-title {
+        font-size: 2em;
+        font-weight: 200;
+        line-height: 43px;
+        text-align: center;
+      }
+
+      .section-detail {
+        font-size: 1.5em;
+        line-height: 32px;
+        font-weight: 200;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .demo-btn {
+        width: 201px;
+        height: 58px;
+        color: white;
+        font-size: 1.4em;
+        font-weight: 300;
+        line-height: 29px;
+        text-transform: uppercase;
+        border: 1px solid #ffffff;
+        border-radius: 50px;
+        background-color: transparent;
+      }
+      .act-btn {
+        width: 167px;
+        height: 58px;
+        color: white;
+        font-size: 1.4em;
+        font-weight: 300;
+        line-height: 29px;
+        margin-top: 35px;
+        text-transform: uppercase;
+        border: 1px solid #ffffff;
+        border-radius: 50px;
+        background-color: transparent;
+      }
+    }
+
+    &.demo {
+      height: 945px;
+      background-image: url('/images/landing/curriculum1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+
+      .section-title {
+        color: white;
+        font-size: 2.6em;
+        font-weight: 400;
+        line-height: 55px;
+        margin-top: 120px;
+      }
+
+      .section-detail {
+        color: white;
+        width: 100%;
+        font-size: 2em;
+      }
+    }
+
+    &.research {
+      .contents {
+        height: 100%;
+        justify-content: center;
+      }
+
+      .section-title {
+        color: $middle-grey;
+        font-weight: 300;
+      }
+
+      .section-detail {
+        color: $middle-grey;
+        font-weight: 300;
+      }
+
+      .demo-btn {
+        color: $primary;
+        border-color: $primary;
+        margin-bottom: 35px;
+        width: 189px;
+      }
+    }
+
+    &.demo-section {
+      .top-demo,
+      .bottom-demo {
+        width: 63%;
+      }
+
+      .middle-demo {
+        > div {
+          &:nth-child(odd) {
+            background-color: $light;
+          }
+          &:nth-child(even) {
+            background-color: #f3f5f7;
+          }
+          &:nth-child(n + 4):nth-child(even) {
+            background-color: $main-background;
+          }
+          &:nth-child(n + 4):nth-child(odd) {
+            background-color: #eff1f4;
+          }
+        }
+      }
+    }
+
+    &.manage {
+      height: 844px;
+      background-image: url('/images/landing/curriculum2.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+
+      .contents {
+        height: 100%;
+        justify-content: center;
+      }
+
+      .section-title {
+        color: white;
+      }
+
+      .section-detail {
+        color: white;
+      }
+
+      .section-items {
+        width: 100%;
+        padding: 0 200px;
+
+        .icon-title {
+          color: white;
+          font-size: 1em;
+          line-height: 21px;
+          font-weight: 200;
+          text-align: center;
+        }
+        .act-btn {
+          color: $primary;
+          border-color: $primary;
+        }
+      }
+    }
+
+    &.comment {
+      height: 547px;
+
+      .contents {
+        height: 100%;
+        justify-content: center;
+      }
+
+      .section-title {
+        color: $dark-grey;
+      }
+
+      .comment-slider {
+        width: 100%;
+        padding: 10px 20px;
+
+        .slick-dots {
+          li {
+            width: 12px;
+            height: 12px;
+          }
+
+          .custom-dot {
+            width: 12px;
+            height: 12px;
+            background: $light-grey;
+            border-radius: 50%;
+            opacity: 0.3;
+          }
+
+          .slick-active {
+            .custom-dot {
+              border-width: 2px;
+              background: $dark-grey;
+              opacity: 0.9;
+            }
+          }
+        }
+        .landing-comment {
+          padding: 0 15px;
+        }
+      }
+    }
+
+    &.asset {
+      height: 370px;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .develop-landing {
+    .section {
+      .container {
+        .section-title {
+          font-size: 1.75em;
+          line-height: 40px;
+        }
+        .section-detail {
+          font-size: 1.375em;
+          line-height: 30px;
+        }
+      }
+      &.demo {
+        height: 750px;
+        .section-title {
+          font-size: 2.125em;
+          margin-top: 125px;
+          line-height: 45px;
+        }
+        .section-detail {
+          font-size: 1.5em;
+        }
+      }
+      .demo-section {
+        .top-demo {
+          width: unset;
+        }
+        .bottom-demo {
+          width: unset;
+        }
+      }
+      .research {
+        .demo-btn {
+          margin-top: 10px !important;
+        }
+      }
+      &.manage {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px;
+        .section-items {
+          padding: unset;
+          margin: 0;
+          .landing-class {
+            i {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+    .comment {
+      height: auto;
+      padding: 80px 20px;
+      &.comment {
+        .comment-slider {
+          padding: 0px;
+          .landing-comment {
+            padding: 0;
+            .comment-detail {
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .develop-landing {
+    .section {
+      .container {
+        .section-detail {
+          font-size: 1em;
+          line-height: 1.4;
+          font-weight: 300;
+        }
+        .section-title {
+          font-size: 1.4375em;
+          line-height: 1.3;
+        }
+      }
+      &.comment {
+        height: unset;
+        padding: 70px 0;
+        .comment-slider {
+          padding: 0;
+        }
+      }
+      &.demo {
+        height: 750px;
+        .section-title {
+          margin: 100px 15px 15px;
+          font-size: 1.562em;
+          line-height: 1.3;
+        }
+        .section-detail {
+          font-size: 1.125em;
+          line-height: 1.3;
+          font-weight: 300;
+        }
+      }
+      &.asset {
+        height: unset;
+        .landing-contact {
+          padding: 50px 0;
+          margin-bottom: 60px;
+          .title {
+            font-size: 1.562em;
+            font-weight: 200;
+            line-height: 1.3;
+          }
+          .sub-title {
+            font-size: 1.125em;
+            font-weight: 300;
+            margin: 20px 0;
+          }
+        }
+      }
+      .demo-section {
+        .landing-demo {
+          padding: 15px;
+        }
+      }
+    }
+  }
+  .manage {
+    height: auto !important;
+    padding: 100px 20px;
+    .section-items {
+      padding: 10px 0px !important;
+      margin: 0px;
+    }
+  }
+}

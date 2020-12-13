@@ -1,0 +1,73 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.mng-birthday {
+  .list-header {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+  }
+
+  .sort-item {
+    cursor: pointer;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .birthday-right-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    i {
+      margin-left: 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+
+  .list-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 22px 0;
+  }
+  .core-pagination {
+    padding: 20px 0 0 0;
+  }
+  .company-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 8em;
+    height: 16px;
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    .list-item {
+      padding: unset;
+      .custom-right-border-sm {
+        margin-right: 12px;
+      }
+    }
+    .card {
+      padding: 20px !important;
+    }
+  }
+  @media screen and (max-width: $screen-ssm) {
+    .card {
+      padding: 15px !important;
+    }
+    .custom-br-ssm {
+      padding-top: 26px;
+    }
+    .ds-datepicker {
+      margin-top: 8px;
+    }
+    .company-name {
+      padding-top: 30px;
+      height: 70px;
+    }
+    .core-pagination {
+      justify-content: left;
+    }
+  }
+}

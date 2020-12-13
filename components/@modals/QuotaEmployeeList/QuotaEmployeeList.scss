@@ -1,0 +1,24 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.quota-employees-list-modal {
+  .list-container {
+    border: 1px solid #f5f6f8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    max-height: 300px;
+    padding: 10px;
+
+    .list-content {
+      overflow-y: scroll;
+    }
+  }
+  .modal-button {
+    font-weight: 400;
+    background-color: white;
+    border: 1px solid #376caf;
+    color: #376caf;
+    padding: 5px 15px;
+  }
+}

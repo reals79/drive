@@ -1,0 +1,51 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.report-training-schedule {
+  .training-schedule-list {
+    padding: 30px 20px;
+    background-color: white;
+
+    .list-items {
+      padding: 30px 0;
+      &:hover {
+        background-color: #e7eff8;
+        padding: 30px 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+    }
+
+    .core-pagination {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .truncate-one {
+    overflow: unset;
+    @media screen and (max-width: $screen-md) {
+      margin-right: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .report-training-schedule {
+    .training-schedule-list {
+      padding: 20px 15px 20px 15px;
+      .ds-datepicker {
+        margin-top: 5px;
+      }
+      .core-pagination {
+        padding: 15px 0 0 0;
+        justify-content: flex-start;
+      }
+      .list-items {
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+      .custom-br-ssm {
+        padding-top: 26px;
+      }
+    }
+  }
+}

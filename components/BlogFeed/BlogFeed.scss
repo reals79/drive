@@ -1,0 +1,44 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.recent-blogs-feed {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  .card {
+    .read-more-content {
+      .short-text {
+        color: #343f4b;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400 !important;
+      }
+    }
+  }
+  .blogs-title {
+    width: 100%;
+    padding: 20px 20px 0;
+    margin: 0;
+    background-color: white;
+  }
+  .img {
+    width: auto;
+    margin-bottom: 5px;
+    img {
+      border-radius: 5px;
+      margin: 0 !important;
+    }
+  }
+  .back-hover:hover {
+    background-color: #e7eff8;
+  }
+  .small-card {
+    height: 120px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    .h75 {
+      height: 75px;
+    }
+    .h25 {
+      height: 25px;
+    }
+  }
+}

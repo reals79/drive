@@ -1,0 +1,13 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.reports-task {
+  .card {
+    padding-top: 30px;
+    @media screen and (max-width: $screen-sm) {
+      padding: 20px !important;
+    }
+    @media screen and (max-width: $screen-ssm) {
+      padding: 15px !important;
+    }
+  }
+}

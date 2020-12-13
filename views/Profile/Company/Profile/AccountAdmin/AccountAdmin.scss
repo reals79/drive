@@ -1,0 +1,12 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.account-admin {
+  .w200 {
+    width: 200px;
+  }
+  .ds-checkbox {
+    span {
+      white-space: normal;
+    }
+  }
+}

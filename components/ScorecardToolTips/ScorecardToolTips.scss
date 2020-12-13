@@ -1,0 +1,64 @@
+.quota-tooltip {
+  z-index: 9999;
+  opacity: 1.3 !important;
+  .tooltip-inner {
+    text-align: left;
+    min-width: 300px;
+    margin-left: 200px;
+  }
+  .arrow::before {
+    border-top-color: white;
+  }
+}
+.score-tooltip {
+  .arrow {
+    display: none;
+  }
+  .dsl-score-title {
+    color: #343f4b;
+    font-weight: 500;
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .tooltip-list {
+    .tooltip-lable {
+      flex: 1;
+      line-height: 18px !important;
+      text-align: left;
+    }
+    .tooltip-value {
+      flex: 1;
+      text-align: left;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+  }
+  .tooltip-inner {
+    max-width: 100%;
+    width: 315px;
+    padding: 8px 16px;
+  }
+}
+
+.rating-tooltip {
+  opacity: 1.3 !important;
+  z-index: 9999;
+  .tooltip-inner {
+    text-align: left;
+    width: 240px;
+  }
+  .arrow::before {
+    border-top-color: white;
+  }
+  .ds-stars {
+    .flex-nowrap {
+      span {
+        margin-right: 2px;
+      }
+    }
+    .star-list.small .fa-star {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.task-report {
+  .list-item {
+    border-bottom: 1px solid #e0e0e0;
+
+    .name {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .edit {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    &.border-none {
+      border-bottom: none;
+    }
+  }
+  .habits-padding {
+    margin-left: 70px;
+    @media screen and (min-width: 993px) and (max-width: 1114px) {
+      margin-top: 14px;
+      margin-left: 45px;
+    }
+    span {
+      padding-bottom: 2px;
+    }
+  }
+  .core-pagination {
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  .fa-print {
+    cursor: pointer;
+  }
+  .edit-icon {
+    justify-content: flex-end;
+    flex: 0.5;
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .task-report {
+    .tasks-start {
+      padding: 35px 0;
+      margin: 0;
+    }
+    .core-pagination {
+      padding: 10px 0;
+    }
+    .habits-padding {
+      margin: 0;
+      span {
+        text-align: end;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .task-report {
+    .custom-br-ssm {
+      padding: 15px 15px 15px 0;
+    }
+    .tasks-start {
+      padding: 20px 0;
+    }
+  }
+}

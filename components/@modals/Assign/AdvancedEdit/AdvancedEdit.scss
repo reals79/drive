@@ -1,0 +1,15 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.advanced-edit {
+  .advanced-edit-list {
+    .list-label {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .core-pagination {
+      padding: 0;
+      justify-content: flex-start;
+    }
+  }
+}

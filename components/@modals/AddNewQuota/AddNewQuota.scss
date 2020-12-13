@@ -1,0 +1,16 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.add-new-quota-modal {
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary;
+  }
+
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+  }
+}

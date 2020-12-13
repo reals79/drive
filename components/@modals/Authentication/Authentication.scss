@@ -1,0 +1,49 @@
+@import '../../../layouts/Dashboard/theme.scss';
+
+.auth-modal {
+  .modal-header {
+    border: none;
+  }
+
+  .modal-body {
+    .nav {
+      display: flex;
+      justify-content: center;
+    }
+    .core-input {
+      margin-bottom: 5px;
+      .core-input-label {
+        width: 100px;
+      }
+    }
+    .core-dropdown {
+      margin-bottom: 5px;
+      margin-top: 5px;
+      .core-dropdown-title {
+        width: 115px;
+      }
+    }
+    .task-text {
+      input {
+        min-height: 60px;
+      }
+    }
+    .comapny-select {
+      &-title {
+        width: 100px;
+      }
+      &-list {
+        width: 80%;
+        margin-left: 30px;
+      }
+    }
+    .register-date-end {
+      .core-input {
+        margin-bottom: 5px;
+        .core-input-label {
+          width: 0px;
+        }
+      }
+    }
+  }
+}

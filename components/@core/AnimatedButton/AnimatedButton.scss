@@ -1,0 +1,84 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.core-animated-button {
+  height: fit-content;
+  .lds-dual-ring {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    &:after {
+      content: ' ';
+      display: block;
+      width: 46px;
+      height: 46px;
+      margin: 1px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      border-color: #fff transparent #fff transparent;
+      animation: lds-dual-ring 1.2s linear infinite;
+    }
+
+    &.ring-18 {
+      width: 18px;
+      height: 18px;
+      &:after {
+        width: 18px;
+        height: 18px;
+        border-width: 2px;
+      }
+    }
+    &.ring-24 {
+      width: 24px;
+      height: 24px;
+      &:after {
+        width: 24px;
+        height: 24px;
+        border-width: 2px;
+      }
+    }
+  }
+
+  &.link {
+    border: none;
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+
+  &.size-small {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &.size-medium {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px 20px;
+  }
+  &.size-large {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 12px 24px;
+  }
+
+  &.btn[disabled] {
+    background-color: $slight-grey;
+    border: none;
+    color: $dark-grey;
+  }
+
+  &:focus,
+  &:active,
+  &:hover {
+    box-shadow: none;
+    outline: none;
+  }
+
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.cta-modal {
+  .header {
+    background-color: $primary;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+  }
+  .content {
+    padding: 40px 40px 10px 40px;
+
+    .form-group {
+      margin-bottom: 30px;
+      .control-label {
+        color: #969faa;
+        font-size: 16px;
+        font-weight: 100;
+      }
+      .form-control {
+        border-radius: 0;
+        border-left-width: 0;
+        border-top-width: 0;
+        border-right-width: 0;
+        box-shadow: none;
+        font-size: 18px;
+        padding-left: 0;
+      }
+    }
+  }
+  .recaptcha {
+    padding: 0 40px;
+  }
+  .submit {
+    padding: 40px 40px 0 40px;
+    .btn {
+      color: white;
+      font-size: 16px;
+      font-weight: 100;
+      padding: 10px 50px;
+      border-radius: 50px;
+      &:active:focus {
+        background-color: #2b61a7;
+        border-color: #ffffff;
+      }
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #343f4b;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #343f4b;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #343f4b;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #343f4b;
+  }
+}

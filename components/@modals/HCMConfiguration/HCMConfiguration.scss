@@ -1,0 +1,48 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.hcm-configuration-modal {
+  @media (min-width: 768px) {
+    .modal-dialog {
+      width: 460px;
+      margin-top: 10%;
+    }
+  }
+  *:focus {
+    outline: 0 !important;
+  }
+
+  .modal-header {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border: none;
+  }
+
+  .modal-body {
+    flex-direction: column;
+    padding: 30px;
+    .core-input {
+      &-label {
+        width: 100px;
+      }
+      &-content {
+        input {
+          width: 50%;
+        }
+      }
+    }
+    .core-dropdown {
+      &-title {
+        width: 115px;
+      }
+    }
+  }
+
+  .modal-footer {
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 30px;
+  }
+}

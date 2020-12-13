@@ -1,0 +1,34 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.fab-button-contents {
+  z-index: 999;
+  width: $sidebar-width - 40;
+  position: fixed !important;
+  bottom: 40px;
+  pointer-events: none;
+
+  .contents {
+    width: 72px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: auto;
+    pointer-events: auto;
+
+    .fab-button {
+      height: 72px;
+      width: 72px;
+      color: $white;
+      background-color: $primary;
+      border: 4px solid white;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0;
+      cursor: pointer;
+      &:focus {
+        outline: 0 !important;
+      }
+    }
+  }
+}

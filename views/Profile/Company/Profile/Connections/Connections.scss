@@ -1,0 +1,17 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.company-profile-connections {
+  border-radius: 5px;
+  background-color: white;
+
+  .connections-header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .connections-content {
+    padding: 0 20px 20px;
+  }
+}

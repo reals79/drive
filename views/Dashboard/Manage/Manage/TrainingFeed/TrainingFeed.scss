@@ -1,0 +1,31 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.dev-develop-feed {
+  background-color: $main-background;
+  .feed-header {
+    background-color: $white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 30px 20px 1px 20px;
+  }
+  .learn-feed-grid {
+    &:nth-child(3) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .dev-develop-feed {
+    .feed-header {
+      display: none;
+    }
+    .learn-feed-grid {
+      padding: 0 15px;
+      &:nth-child(3) {
+        padding-top: 12px;
+      }
+    }
+  }
+}

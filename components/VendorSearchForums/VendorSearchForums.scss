@@ -1,0 +1,19 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.vendor-search-forums {
+  .vendor-search-forums-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .vendor-search-forums-item {
+    padding: 20px 0;
+
+    &.detail {
+      border-bottom: 1px solid $slight-grey;
+    }
+  }
+}

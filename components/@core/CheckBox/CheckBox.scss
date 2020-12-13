@@ -1,0 +1,210 @@
+@import '../../../../../assets/js/layouts/Dashboard/theme';
+$checked-color: #969faa;
+$unchecked-color: #969faa;
+$checked-reversed-color: #fff;
+$background-color: #fff;
+$font-color: #efefef;
+$duration: 0.4s;
+
+@mixin CHECKBOX($size) {
+  @-moz-keyframes dothabottomcheck-#{$size} {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: $size * 0.3;
+    }
+  }
+
+  @-webkit-keyframes dothabottomcheck-#{$size} {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: $size * 0.3;
+    }
+  }
+
+  @keyframes dothabottomcheck-#{$size} {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: $size * 0.3;
+    }
+  }
+
+  @keyframes dothatopcheck-#{$size} {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 0;
+    }
+    100% {
+      height: $size * 0.5;
+    }
+  }
+  @-webkit-keyframes dothatopcheck-#{$size} {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 0;
+    }
+    100% {
+      height: $size * 0.5;
+    }
+  }
+  @-moz-keyframes dothatopcheck-#{$size} {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 0;
+    }
+    100% {
+      height: $size * 0.5;
+    }
+  }
+
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  label {
+    margin-bottom: 0;
+  }
+
+  .check-box {
+    height: $size;
+    width: $size;
+    background-color: transparent;
+    border: 1px solid $unchecked-color;
+    border-radius: $size / 2;
+    position: relative;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transition: border-color ease $duration/2;
+    -o-transition: border-color ease $duration/2;
+    -webkit-transition: border-color ease $duration/2;
+    transition: border-color ease $duration/2;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      position: absolute;
+      height: 0;
+      width: 1px;
+      background-color: $checked-color;
+      display: inline-block;
+      -moz-transform-origin: left top;
+      -ms-transform-origin: left top;
+      -o-transform-origin: left top;
+      -webkit-transform-origin: left top;
+      transform-origin: left top;
+      border-radius: 5px;
+      content: ' ';
+      -webkit-transition: opacity ease 0.5;
+      -moz-transition: opacity ease 0.5;
+      transition: opacity ease 0.5;
+    }
+
+    &::before {
+      top: $size * 0.68;
+      left: $size * 0.39;
+      box-shadow: 0 0 0 $size * 0.05 $background-color;
+      -moz-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+    }
+
+    &::after {
+      top: $size * 0.5;
+      left: $size * 0.18;
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+  }
+
+  input[type='checkbox']:checked + .check-box,
+  .check-box.checked {
+    border-color: $checked-color;
+
+    &::after {
+      height: $size * 0.5;
+      -moz-animation: dothabottomcheck-#{$size} $duration/2 ease 0s forwards;
+      -o-animation: dothabottomcheck-#{$size} $duration/2 ease 0s forwards;
+      -webkit-animation: dothabottomcheck-#{$size} $duration/2 ease 0s forwards;
+      animation: dothabottomcheck-#{$size} $duration/2 ease 0s forwards;
+    }
+
+    &::before {
+      height: $size * 1.2;
+      -moz-animation: dothatopcheck-#{$size} $duration ease 0s forwards;
+      -o-animation: dothatopcheck-#{$size} $duration ease 0s forwards;
+      -webkit-animation: dothatopcheck-#{$size} $duration ease 0s forwards;
+      animation: dothatopcheck-#{$size} $duration ease 0s forwards;
+    }
+  }
+}
+
+.ds-checkbox {
+  display: flex;
+  .checkmark.tiny {
+    display: flex;
+    align-items: center;
+    @include CHECKBOX(18px);
+  }
+  .checkmark.small {
+    display: flex;
+    align-items: center;
+    @include CHECKBOX(22px);
+  }
+  .checkmark.regular {
+    display: flex;
+    align-items: center;
+    @include CHECKBOX(26px);
+    @media screen and (max-width: $screen-sm) {
+      @include CHECKBOX(25px);
+    }
+  }
+  .checkmark.large {
+    display: flex;
+    align-items: center;
+    @include CHECKBOX(30px);
+  }
+
+  .checkmark.reversed {
+    input[type='checkbox']:checked + .check-box,
+    .check-box.checked {
+      border-color: $checked-reversed-color;
+    }
+
+    .check-box {
+      &::before,
+      &::after {
+        width: 2px;
+        background-color: $checked-reversed-color;
+      }
+
+      &::before {
+        width: 0px;
+      }
+    }
+  }
+  .checktitle {
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+}

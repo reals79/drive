@@ -1,0 +1,62 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.add-packet {
+  .modal-body {
+    padding: 20px;
+    .list-container {
+      border: 1px solid #f5f6f8;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      margin-top: 15px;
+      max-height: 395px;
+      padding: 10px;
+
+      .list-content {
+        overflow-y: scroll;
+
+        .list-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 5px;
+          padding: 3px;
+
+          .item-plus {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $slight-grey;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+
+          &.active {
+            background-color: #f5f6f8;
+
+            .item-plus {
+              background-color: $primary;
+              border: none;
+
+              i {
+                color: $white !important;
+              }
+            }
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .core-pagination {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 0;
+      }
+    }
+  }
+}

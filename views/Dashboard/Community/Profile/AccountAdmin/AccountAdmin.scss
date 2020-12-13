@@ -1,0 +1,106 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.com-account-admin {
+  .default {
+    display: flex;
+    align-items: center;
+    padding: 10px 20% 10px 0;
+    &-header {
+      width: 70px;
+    }
+    &-content {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      justify-content: space-between;
+    }
+    &-email {
+      width: 600px;
+      @media screen and (max-width: $screen-ssm) {
+        max-width: 300px;
+      }
+    }
+    @media screen and (max-width: $screen-ssm) {
+      padding: 0;
+    }
+    .email {
+      width: 400px;
+      .core-input-content input {
+          margin-left: 0;
+      }
+    }
+  }
+  .fixed-label {
+    width: 200px;
+  }
+  .list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+  }
+  .password {
+    max-width: 500px;
+    @media screen and (max-width: $screen-ssm) {
+      max-width: $screen-ssm;
+    }
+
+    .core-input.horizontal {
+      @media screen and (max-width: $screen-ssm) {
+        flex-direction: column;
+        align-items: flex-start;
+        .core-input-content {
+          width: 100%;
+        }
+        input {
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+    }
+    .core-input {
+      margin-bottom: 10px;
+      .core-input-label {
+        width: 110px;
+      }
+    }
+    .password-text {
+      margin-left: 130px;
+      @media screen and (max-width: $screen-ssm) {
+        margin-left: 0;
+      }
+      .core-button {
+        display: initial;
+        padding: 0px;
+      }
+      .core-button.size-small {
+        text-decoration: underline;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+  }
+  .profile-optimization {
+    .feature {
+      max-width: 300px;
+    }
+    .feature-progress {
+      max-width: 300px;
+    }
+  }
+  .companies {
+    .search {
+      width: 500px;
+      &-button {
+        width: 85px;
+        margin-left: 10px;
+      }
+      &-input {
+        width: 300px;
+        .form-control {
+          width: 100%;
+          background-color: $slight;
+        }
+      }
+    }
+  }
+}

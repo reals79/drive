@@ -1,0 +1,18 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.ds-search {
+  display: flex;
+  align-items: center;
+
+  input {
+    border: none;
+    color: $dark-grey;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    width: 120px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

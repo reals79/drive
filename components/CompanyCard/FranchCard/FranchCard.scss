@@ -1,0 +1,14 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.vdra-franchises {
+  &-wrapper {
+    max-height: 390px;
+  }
+
+  .ds-checkbox span {
+    margin-left: 0.75rem !important;
+  }
+  .vdra-w {
+    width: 100px;
+  }
+}

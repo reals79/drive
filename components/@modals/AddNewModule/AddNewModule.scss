@@ -1,0 +1,93 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.add-new-module-modal {
+  .modal-header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $main-blue;
+    height: 40px;
+  }
+  .modal-body {
+    padding: 20px;
+
+    .core-input {
+      flex: 1;
+    }
+    .module-name,
+    .video-url,
+    .objectives,
+    .module-description {
+      .clear {
+        display: none;
+      }
+      .delete {
+        display: none;
+      }
+    }
+    .upload-video {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $light;
+      box-shadow: none;
+      cursor: pointer;
+      width: 140px;
+      height: 34px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $light;
+      border-radius: 5px;
+      cursor: pointer;
+      overflow: hidden;
+      width: 170px;
+      height: 105px;
+      img {
+        width: 170px;
+      }
+    }
+    .type-dropdown {
+      border: none;
+      color: $dark-grey;
+      font-size: 14px;
+      line-height: 1;
+      padding: 0;
+    }
+    .module-description {
+      height: 100%;
+      textarea {
+        height: 100%;
+      }
+    }
+    .ql-toolbar.ql-snow {
+      background-color: $light;
+    }
+    .question-circle {
+      background-color: $light-grey;
+      width: 20px;
+      height: 20px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .objectives {
+      input {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .ds-dropdown .dropdown button {
+    font-size: 13px;
+  }
+}

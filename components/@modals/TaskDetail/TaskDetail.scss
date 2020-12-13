@@ -1,0 +1,131 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.task-detail-modal {
+  .modal-header {
+    text-align: center;
+  }
+
+  .modal-body {
+    .task-detail,
+    .comments-detail {
+      padding-bottom: 10px;
+
+      .comments-container {
+        .info-wrapper {
+          position: relative;
+          .avatar-image {
+            position: absolute;
+            top: 0;
+          }
+        }
+      }
+
+      .title-container,
+      .info-container,
+      .comments-container {
+        padding: 0;
+
+        .comment-body {
+          width: calc(100% - 35px);
+
+          textarea {
+            resize: none;
+            border: none;
+            box-shadow: none;
+            background: $light;
+            height: 65px;
+          }
+          .btn-approval {
+            display: flex;
+            margin-top: 20px;
+            .btn-approve,
+            .btn-decline {
+              border-radius: 20px !important;
+              background-color: transparent;
+              color: $primary;
+              font-size: 12px;
+              width: 90px;
+              &:hover {
+                opacity: 0.7;
+              }
+            }
+          }
+        }
+      }
+
+      .title-container {
+        padding-right: 30px;
+      }
+
+      .info-wrapper {
+        display: flex;
+        margin-bottom: 15px;
+
+        .info-label {
+          min-width: 90px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .modal-footer {
+    border: none;
+    padding-bottom: 20px 30px 30px;
+
+    .footer-contents {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 16px;
+      color: $main-blue;
+      cursor: pointer;
+
+      .ds-upload {
+        float: left;
+      }
+      .emoji-attach {
+        display: flex;
+      }
+      .emoji-mart-emoji {
+        margin-left: 20px;
+        float: left;
+      }
+
+      .emoji-container {
+        position: relative;
+        top: -388px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .modal-dialog {
+      width: 60%;
+      max-width: 900px;
+      min-width: 370px;
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #c3c7cc;
+    font-size: 12px;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #c3c7cc;
+    font-size: 12px;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #c3c7cc;
+    font-size: 12px;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #c3c7cc;
+    font-size: 12px;
+  }
+}

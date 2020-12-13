@@ -1,0 +1,138 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.library-track-card {
+  background-color: white;
+  padding: 0 20px;
+
+  .lib-content {
+    display: flex;
+    flex: 1;
+    border-top: 1px solid $border-grey;
+    padding: 20px 0;
+    .track-content {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 20px;
+    }
+
+    .edit {
+      display: flex;
+      align-items: center;
+      padding: 20px 15px;
+      cursor: pointer;
+    }
+  }
+
+  .detail-content {
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .modules-content {
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    .courses-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 20px;
+    }
+    .courses-list {
+      width: 100%;
+      display: flex;
+      padding: 20px 0;
+      border-top: 1px solid #c3c7cc;
+      .name {
+        flex: 1;
+        padding: 0 10px;
+      }
+      .lock {
+        width: 200px;
+      }
+      .ellipsis {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50px;
+      }
+    }
+  }
+
+  .detail-content,
+  .modules-content {
+    .course-checkbox {
+      color: #c3c7cc;
+      font-size: 14px;
+      &.active {
+        color: #343f4b;
+        .ds-checkbox > label {
+          border-color: #343f4b;
+          &:before,
+          &:after {
+            background-color: #343f4b;
+          }
+        }
+      }
+    }
+    .track-input,
+    .track-text {
+      .form-control {
+        margin-right: 0;
+      }
+      .clear {
+        display: none;
+      }
+      .delete {
+        display: none;
+      }
+    }
+    .track-text {
+      height: 100%;
+      textarea {
+        height: 100%;
+      }
+    }
+    .settings {
+      .accordion__item {
+        .accordion__body {
+          padding: 30px 0 0;
+        }
+      }
+    }
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $dark-grey;
+    font-weight: 400;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $dark-grey;
+    font-weight: 400;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $dark-grey;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .library-track-card {
+    .lib-content {
+      .track-content {
+        display: block;
+      }
+    }
+  }
+}

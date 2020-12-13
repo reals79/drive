@@ -1,0 +1,136 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.library-programs-list {
+  padding: 0 20px;
+  background-color: white;
+
+  .programs-closed-list {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid $border-grey;
+
+    .list-detail {
+      width: calc(100% - 45px);
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      .wrap-assigned {
+        margin-right: 80px;
+        @media screen and (max-width: $screen-ssm) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .edit {
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      cursor: pointer;
+    }
+    .small {
+      .icon {
+        min-height: 60px;
+        min-width: 115px;
+        border: 1px solid #f0f1f2;
+      }
+    }
+  }
+
+  .programs-module-list {
+    .edit {
+      padding: 0 10px;
+      align-items: center;
+    }
+    .core-pagination {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .input-field {
+      margin: 0;
+      .core-input-content {
+        .form-control {
+          margin: 0;
+          max-width: 100px;
+        }
+      }
+    }
+  }
+
+  .programs-empty-list {
+    .empty {
+      width: 100%;
+      border: 0.5px solid #f0f0f0 !important;
+      border-radius: 8px;
+
+      &.long {
+        max-width: 300px;
+        height: 15px;
+      }
+
+      &.medium {
+        max-width: 200px;
+        height: 15px;
+      }
+
+      &.small {
+        max-width: 50px;
+        height: 10px;
+      }
+
+      &.circle {
+        width: 35px;
+        height: 35px;
+        margin: 5px;
+        border-radius: 20px;
+      }
+
+      &.square {
+        max-width: 35px;
+        height: 20px;
+        margin-left: auto;
+      }
+    }
+    .min-height-100 {
+      min-width: 100px;
+    }
+    .min-height-50 {
+      min-width: 50px;
+    }
+  }
+}
+.library-programs-list:last-child {
+  .programs-closed-list {
+    border-bottom: 1px solid $border-grey;
+  }
+}
+@media screen and (max-width: $screen-ssm) {
+  .library-programs-list {
+    .programs-closed-list {
+      .list-detail {
+        .list-detail-info {
+          .assigned-flex {
+            display: flex;
+            text-align: unset;
+          }
+          &.habits,
+          &.habitslist {
+            position: relative;
+            .wrap-assigned {
+              margin-left: 20px;
+            }
+            .assigned-flex {
+              position: absolute;
+              top: 22px;
+              left: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

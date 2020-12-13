@@ -1,0 +1,133 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.lib-programs-career {
+  .career-detail,
+  .settings-contents,
+  .modules-contents {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .settings-career {
+    .accordion__item {
+      .accordion__body {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .career-thumbnail {
+    width: 85px;
+    min-width: 85px;
+    height: 83px;
+    min-height: 83px;
+    cursor: pointer;
+
+    .icon {
+      height: 83px;
+      min-height: 83px;
+      background-color: #f2f3f4;
+
+      i {
+        font-size: 24px !important;
+      }
+    }
+
+    .image {
+      padding-top: 100%;
+    }
+  }
+
+  .input-field {
+    margin-bottom: 25px;
+
+    .core-input-label {
+      line-height: 20px;
+    }
+
+    .core-input-content {
+      .form-control {
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 0;
+      }
+      .clear {
+        right: 15px;
+      }
+      .delete {
+        display: none;
+      }
+    }
+  }
+
+  .lock-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 120px;
+  }
+
+  .slick-slider {
+    .slick-arrow {
+      top: 20px;
+      &.slick-prev {
+        left: auto;
+        right: 50px;
+        z-index: 999;
+        i {
+          top: -30px;
+          position: relative;
+        }
+      }
+      &.slick-next {
+        right: 0;
+        z-index: 999;
+        i {
+          top: -30px;
+          position: relative;
+        }
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+    .slick-track {
+      &:focus,
+      div {
+        outline: none;
+      }
+    }
+  }
+
+  .add-training-dropdown {
+    .core-dropdown-toggle {
+      .core-dropdown-title {
+        color: $primary;
+        font-size: 15px;
+      }
+    }
+    .core-dropdown-menu {
+      right: 10px;
+    }
+  }
+
+  .btn-save {
+    height: 36px;
+    padding: 0 20px;
+
+    &.btn[disabled] {
+      color: white;
+    }
+  }
+  .ds-toggle {
+    .dsl-m12 {
+      font-weight: 400;
+    }
+  }
+  .core-pagination {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

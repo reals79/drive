@@ -1,0 +1,58 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.vendor-rating-category-detail {
+  .btn-vendor-ratings {
+    color: $light-grey;
+    padding: 0;
+    margin-right: 4px;
+  }
+
+  .category-detail {
+    padding: 0 8px 0 0;
+  }
+
+  .category-detail-contents,
+  .category-logo {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    height: 100%;
+  }
+
+  .featured-list {
+    border-radius: 5px;
+    background-color: white;
+
+    .featured-list-title {
+      padding: 20px 20px 0;
+    }
+
+    .featured-list-product {
+      padding: 0 20px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $slight;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        resize: auto;
+      }
+
+      .company-contacts {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .btn-company-contact {
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}

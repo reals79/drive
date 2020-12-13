@@ -1,0 +1,25 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.company-profile-about {
+  .card {
+
+    .contact-label,
+    .about-label {
+      min-width: 80px;
+    }
+
+    .core-input-label {
+      min-width: 70px;
+    }
+
+    .core-dropdown-title {
+      min-width: 75px;
+    }
+  }
+  .company-about {
+    display: flex;
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+    }
+  }
+}

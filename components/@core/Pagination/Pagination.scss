@@ -1,0 +1,87 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.core-pagination {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px 20px;
+
+  &-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 40px;
+    height: 30px;
+    span {
+      color: #376caf;
+      &.disabled {
+        color: #676767;
+        cursor: default;
+      }
+    }
+    &.active {
+      background-color: #f5f6f7;
+    }
+    &.ctl {
+      margin-left: 0;
+      margin-right: 0;
+      min-width: 60px;
+      width: auto;
+      &.left {
+        justify-content: flex-start;
+        padding-right: 20px;
+      }
+      &.right {
+        justify-content: flex-end;
+        padding-left: 20px;
+      }
+      &:hover {
+        background-color: transparent;
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+    &:hover {
+      background-color: #f5f6f7;
+    }
+  }
+
+  &-pers {
+    color: #376caf;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: capitalize;
+    &.active {
+      font-weight: bold;
+    }
+  }
+
+  &.large {
+    &-button {
+      span {
+        font-size: 16px;
+      }
+    }
+    &-pers {
+      font-size: 16px;
+    }
+  }
+
+  &.small {
+    &-button {
+      span {
+        font-size: 14px;
+      }
+    }
+    &-pers {
+      font-size: 14px;
+    }
+  }
+}

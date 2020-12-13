@@ -1,0 +1,25 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.edit-project {
+  .modal-header {
+    background-color: $main-blue;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    justify-content: center;
+  }
+  .modal-body {
+    padding: 20px;
+    .core-dropdown {
+      .core-dropdown-label {
+        span {
+          white-space: pre-wrap;
+        }
+      }
+    }
+  }
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: none;
+  }
+}

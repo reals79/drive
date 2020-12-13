@@ -1,0 +1,12 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.career-request {
+  flex: 1;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+
+  .level-progress {
+    width: 200px;
+  }
+}

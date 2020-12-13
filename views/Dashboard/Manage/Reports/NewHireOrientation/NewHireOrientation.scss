@@ -1,0 +1,23 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.mng-new-hire-orientation {
+  .list {
+    background-color: $white;
+    border-radius: 5px;
+    padding: 30px 20px 10px;
+    @media screen and (max-width: $screen-ssm) {
+      padding: 20px 15px 20px 15px;
+      .name-wrap {
+        padding-right: 45px;
+      }
+    }
+    .list-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    :last-child {
+      border-bottom: none;
+    }
+  }
+}

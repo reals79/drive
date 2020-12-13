@@ -1,0 +1,112 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.learn-child-modal {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  .lock-badge {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 40px;
+    min-width: 250px;
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    color: $white;
+    font-size: 16px;
+    background-color: $dark-grey;
+  }
+  .lock-container {
+    height: calc(100% - 140px);
+  }
+}
+
+.dev-assignment-list {
+  background-color: $main-background;
+  .assignment-header {
+    display: flex;
+    justify-content: center;
+    background-color: $white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 30px 20px 20px 20px;
+  }
+  .carry-over-section {
+    .info-container {
+      display: flex;
+
+      .info {
+        flex: 1;
+        margin: 0;
+        background-color: #fdff7a;
+
+        button {
+          background: none;
+          border: none !important;
+        }
+      }
+
+      .bulk-unassign {
+        width: 50px;
+        height: 100%;
+
+        .select-all {
+          width: 50px;
+          min-width: 40px;
+          padding: 0;
+          font-size: 11px;
+        }
+      }
+    }
+    .learn-feed-list {
+      background-color: #fdff7a;
+      &:nth-child(2) {
+        .list-contents {
+          border-top: 1px solid #dee2e6;
+        }
+      }
+    }
+  }
+  .list-view-label {
+    background-color: white;
+    border-color: transparent !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    :hover {
+      overflow: visible;
+    }
+  }
+  .nav-tabs {
+    padding-left: 20px;
+  }
+}
+
+.nav-tabs .nav-item {
+  line-height: 90%;
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .dev-assignment-list {
+    .assignment-header {
+      padding: 15px 15px 10px 15px;
+    }
+    .custom-dropdown-mobile {
+      background: white;
+      padding: 14px 15px 10px 15px;
+      div {
+        align-items: center;
+      }
+      .mobile-screen {
+        position: unset;
+        padding-top: 0;
+      }
+    }
+    .ds-datepicker {
+      margin-top: 5px;
+    }
+    .list-view-label {
+      padding: 15px;
+    }
+  }
+}

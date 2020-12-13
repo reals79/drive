@@ -1,0 +1,203 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.ind-performance-reviews {
+  .list-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .ds-upload {
+    span {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 18px;
+    }
+  }
+  .core-filter {
+    button {
+      margin-bottom: 15px;
+    }
+    .core-button.low {
+      &:hover {
+        background-color: #f8f8f9;
+        border: none;
+        box-shadow: unset;
+      }
+    }
+  }
+
+  .core-text {
+    input {
+      height: 30px;
+    }
+  }
+  .core-pagination {
+    padding: 20px 0 0 0;
+  }
+  .core-task-item {
+    border-bottom: 1px solid #e0e0e0;
+    border-top: none;
+  }
+  .agreed {
+    .title {
+      width: 100px;
+    }
+  }
+  .scorecard-header,
+  .coaching-worksheet-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .include {
+    display: flex;
+    margin-right: 20px;
+    width: 40px;
+  }
+  .comment-popup {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: -2px 2px 10px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    position: absolute;
+    top: 25px;
+    right: 100%;
+    width: 250px;
+    max-height: 250px;
+    min-height: 65px;
+    z-index: 1;
+
+    .close {
+      position: absolute;
+      right: 15px;
+      top: 7px;
+    }
+    .comment-avatar {
+      border-radius: 18px;
+      width: 36px;
+      height: 36px;
+    }
+    input {
+      text-align: left;
+      width: 100%;
+    }
+  }
+  .performance-tasks {
+    .performance-commitments-item {
+      &:last-child {
+        border-bottom: 1px solid #e0e0e0;
+      }
+    }
+  }
+  .upload-button {
+    button {
+      padding: unset;
+    }
+  }
+}
+
+.pr-individual-modal {
+  .modal-content {
+    background-color: transparent;
+    .modal-body {
+      background-color: white;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 30px;
+      .quota-item {
+        display: flex;
+        border-bottom: 1px solid #e0e0e0;
+        .score {
+          width: 110px;
+        }
+      }
+      .quota-total {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 25px;
+        .score {
+          width: 110px;
+        }
+      }
+      .coach-item {
+        display: flex;
+        border-bottom: 1px solid #e0e0e0;
+        .score {
+          display: flex;
+          justify-content: space-between;
+          width: 110px;
+        }
+      }
+      .commit-title {
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .commit-item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 10px 0;
+        .commit-check {
+          width: 50px;
+        }
+        .commit-content {
+          flex: 1;
+        }
+        .commit-profile {
+          justify-content: center;
+          width: 80px;
+        }
+        .commit-edit {
+          display: flex;
+          align-items: flex-end;
+        }
+      }
+      .include {
+        display: flex;
+        margin-right: 20px;
+        width: 40px;
+      }
+    }
+    .modal-footer {
+      flex-direction: column;
+      align-items: unset;
+      background-color: white;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding: 30px;
+      .agreed {
+        .dsl-m12 {
+          width: 70px;
+        }
+      }
+    }
+  }
+}
+
+.performance-commitments-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+
+  .avatar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+  }
+
+  .edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    position: relative;
+    .fa-info-circle {
+      position: absolute;
+      top: -20px;
+      right: 5px;
+    }
+  }
+}

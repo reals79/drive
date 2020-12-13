@@ -1,0 +1,141 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.career-required-instances {
+  .trainings {
+    .list {
+      display: flex;
+      border-bottom: 1px solid $slight-grey;
+      padding-bottom: 12px;
+      padding-top: 12px;
+      .modules {
+        text-align: right;
+        width: 70px;
+      }
+      .compl {
+        text-align: right;
+        width: 60px;
+      }
+      .due {
+        text-align: right;
+        width: 50px;
+      }
+      .status {
+        margin-left: 20px;
+        width: 80px;
+      }
+      .edit {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 30px;
+      }
+    }
+  }
+
+  .quotas {
+    .list {
+      display: flex;
+      border-bottom: 1px solid $slight-grey;
+      padding-bottom: 10px;
+      padding-top: 10px;
+
+      .calculation {
+        display: flex;
+        align-items: center;
+        width: 180px;
+        .core-dropdown-label {
+          padding-left: 0;
+        }
+      }
+      .core-input.horizontal .core-input-content input {
+        margin-left: 0;
+      }
+      .actual {
+        text-align: right;
+        width: 100px;
+      }
+      .edit {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 60px;
+      }
+    }
+  }
+
+  .habits {
+    .accordion__title {
+      padding-right: 50px;
+    }
+    .accordion__body {
+      padding-right: 0;
+      .list {
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .target {
+          text-align: right;
+          width: 100px;
+          input {
+            text-align: right;
+          }
+          .clear {
+            display: none;
+          }
+        }
+        .edit {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          width: 50px;
+        }
+      }
+    }
+  }
+
+  .documents {
+  }
+
+  .placeholder {
+    .empty {
+      width: 100%;
+      border: 0.5px solid #f0f0f0;
+      border-radius: 8px;
+
+      &.long {
+        max-width: 300px;
+        height: 15px;
+      }
+
+      &.medium {
+        max-width: 200px;
+        height: 15px;
+      }
+
+      &.small {
+        max-width: 50px;
+        height: 10px;
+      }
+
+      &.circle {
+        width: 35px;
+        height: 35px;
+        margin: 5px;
+        border-radius: 20px;
+      }
+
+      &.square {
+        max-width: 35px;
+        height: 20px;
+        margin-left: auto;
+      }
+    }
+  }
+  .habit-accordion.regular .accordion__item .accordion__title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .u-position-relative > div p {
+      font-size: 16px;
+    }
+  }
+}

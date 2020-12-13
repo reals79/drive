@@ -1,0 +1,143 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.record-item {
+  background-color: $white;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 20px;
+
+  .record-item-header {
+    margin-right: 50px;
+  }
+  .record-item-body {
+    flex: 1;
+    .ds-dropdown {
+      align-items: flex-start;
+      margin-top: 5px;
+      .label {
+        margin-right: 0;
+        margin-top: 2px;
+        min-width: 100px;
+        text-align: left;
+        width: 100px;
+      }
+      .dropdown button {
+        font-size: 14px;
+        text-align: left;
+        white-space: inherit;
+      }
+    }
+    .core-input {
+      .core-input-label {
+        width: 85px;
+      }
+      input {
+        background-color: transparent;
+      }
+    }
+    .ds-datepicker {
+      .dsl-label {
+        margin-right: 0;
+        width: 100px;
+      }
+      .react-datepicker-wrapper {
+        flex: 1;
+        input {
+          border: none;
+        }
+      }
+    }
+
+    .assignments {
+      position: relative;
+
+      &--category {
+        display: flex;
+        margin-bottom: 20px;
+
+        &--name {
+          display: flex;
+          align-items: baseline;
+          width: 120px;
+
+          .icon-success {
+            margin-right: 5px;
+            color: #16ac10;
+          }
+
+          .icon-failure {
+            margin-right: 5px;
+            color: #ff0000;
+          }
+
+          .category-success {
+            font-size: 14px;
+            color: $dark-grey;
+          }
+
+          .category-failure {
+            font-size: 14px;
+            color: #ff0000;
+          }
+
+          .detail {
+            font-size: 12px;
+          }
+        }
+
+        &--detail {
+          .title {
+            color: $main-blue;
+
+            &:first-child::before {
+              display: none;
+            }
+
+            &::before {
+              content: ', ';
+            }
+          }
+
+          .assign {
+            color: $dark-blue;
+            cursor: pointer;
+          }
+        }
+      }
+
+      &--category:first-child {
+        margin-top: 10px;
+      }
+
+      &--detail_modal {
+        display: none;
+        padding: 20px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 999;
+        width: 400px;
+        background-color: $white;
+        border-radius: 4px;
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+
+        .icon-success,
+        .icon-failure {
+          margin-top: 3px;
+        }
+
+        .assignments--category {
+          &--detail {
+            width: 260px;
+          }
+        }
+      }
+
+      &:hover {
+        .assignments--detail_modal {
+          display: block;
+        }
+      }
+    }
+  }
+}

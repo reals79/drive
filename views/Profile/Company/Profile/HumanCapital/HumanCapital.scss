@@ -1,0 +1,75 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.human-capital {
+  .responsive_title { display: none; }
+  @media screen and (min-width: 375px) {
+    .responsive_list {
+      display: contents !important
+    }
+    .responsive_text_align {
+      text-align: right !important;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .library_header {
+      display: none !important;
+    }
+    .responsive_list {
+      display: block !important;
+      position: absolute;
+      left: 187px;
+      top: 37px;
+    }
+    .responsive_title {
+      display: block;
+      position: absolute;
+      left: 87px;
+      top: 37px;
+    }
+    .responsive_text_align {
+      text-align: left !important;
+    }
+    .library-author-panel {
+      position: relative;
+      height: 150px;
+      margin-right: 10px;
+      border-top: 1px solid #d8d8d8;
+    }
+    .align-items-center {
+      align-items: flex-start !important;
+    }
+    .item-name >div {
+      width: 60px !important;
+      height: 60px !important;
+      border-radius: 50% !important;
+    }
+    .item-name ~span {
+      font-size: 16px;
+      padding-left: 10px;
+      font-weight: bold;
+    }
+  }
+  .w50 {
+    width: 50px;
+  }
+  .add-row {
+    .core-input {
+      &-label {
+        width: 100px;
+      }
+    }
+    .core-dropdown {
+      &-title {
+        width: 150px;
+      }
+    }
+  }
+  .edit-row {
+    .core-input {
+      &-content {
+        max-width: 500px;
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.profile-header {
+  border-radius: 5px;
+  width: 100%;
+  height: 220px;
+
+  .top-section {
+    height: calc(100% - 50px);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: lightgray;
+
+    .info-bar {
+      display: flex;
+
+      .avatar {
+        background-color: #ffffff;
+        background-size: contain;
+        background-position: center;
+        border-radius: 60px;
+        margin-left: 30px;
+        transform: translateY(15px);
+        width: 120px;
+        height: 120px;
+        border: 2px solid white;
+        -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+      }
+      .main-info {
+        margin-left: 30px;
+        padding-top: 30px;
+      }
+      .social-info {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 20px 20px 20px 0;
+
+        .social-link-button {
+          width: 50px;
+          min-width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          > i.fab {
+            margin: 0 !important;
+          }
+        }
+
+        .btn-connect {
+          color: white;
+          border-color: white;
+        }
+      }
+      .login-info {
+        .login-button {
+          background-color: transparent;
+          border: 1px #fff solid;
+        }
+      }
+    }
+
+    .dots-menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .header-nav {
+    height: 40px;
+    padding-left: 20%;
+    padding-right: 30px;
+    background: $main-blue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+
+    .section {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      position: relative;
+      &-item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        color: $white;
+        white-space: nowrap;
+      }
+      &-divider {
+        width: 1px;
+        height: 50% !important;
+        background-color: $sub;
+      }
+      &.active {
+        background-color: $sub;
+      }
+      &.before {
+        .section-item {
+          border-color: $primary;
+        }
+      }
+      &:hover {
+        background-color: $sub;
+      }
+      > div {
+        height: 100%;
+      }
+    }
+    .popup {
+      display: flex;
+      background-color: white;
+      flex-direction: column;
+      border-radius: 5px;
+      padding: 15px 10px;
+      position: absolute;
+      right: 0;
+      top: 30px;
+      width: 200px;
+      z-index: 100;
+      a {
+        height: 34px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        color: $dark-grey;
+        text-decoration: none;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: #e7eff8;
+        }
+      }
+    }
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+}

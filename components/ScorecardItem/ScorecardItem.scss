@@ -1,0 +1,47 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.scorecard-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-top: 1px solid #e0e0e0;
+  cursor: pointer;
+  margin: 0px;
+
+  &:hover,
+  &:focus {
+    background-color: #f1f5fb;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 15px 20px 15px 20px;
+    & + .scorecardk-item {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding: 15px 20px 15px 20px;
+    }
+  }
+
+  .scorecard-detail {
+    width: calc(100% - 26px - 40px);
+    .rating-tooltip {
+      position: absolute;
+      top: auto;
+      left: 0px;
+      right: auto;
+      bottom: 0px;
+      transform: translate(991px, 352px);
+    }
+  }
+
+  .truncate-one:hover {
+    cursor: pointer;
+  }
+
+  .avatar-section {
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

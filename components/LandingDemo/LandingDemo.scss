@@ -1,0 +1,23 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.landing-demo {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .avatar-container {
+    overflow: hidden;
+    border: 2px solid $primary;
+    border-radius: 50%;
+  }
+
+  .btn-container {
+    margin-top: 30px;
+    .btn-demo {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 10px 40px;
+    }  
+  }
+}

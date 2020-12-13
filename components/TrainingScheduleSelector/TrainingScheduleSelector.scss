@@ -1,0 +1,190 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.training-schedule-selector {
+  padding: 20px;
+  background-color: white;
+
+  .fr {
+    float: right;
+  }
+
+  .color-light {
+    color: $light-grey;
+  }
+
+  .training-company-selector {
+    display: inline-block;
+    width: 179px;
+    margin: 15px 0;
+    padding: 0 15px;
+  }
+
+  .schedule-title-input {
+    .title-input-form {
+      margin-top: 20px;
+      display: block;
+      .core-input-content {
+        textarea {
+          margin: unset;
+          resize: none;
+        }
+      }
+
+      .input-control {
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid $light;
+        font-size: 14px;
+        padding: 5px 0;
+
+        &::-webkit-input-placeholder {
+          color: $dark-grey;
+        }
+        &:-moz-placeholder {
+          color: $dark-grey;
+        }
+        &::-moz-placeholder {
+          color: $dark-grey;
+        }
+        &:-ms-input-placeholder {
+          color: $dark-grey;
+        }
+      }
+    }
+  }
+
+  .schedule-date-selector {
+    display: flex;
+    align-items: center;
+
+    .schedule-date-picker {
+      .core-input {
+        display: block;
+        .core-input-content {
+          input {
+            margin-left: unset;
+            background: none;
+          }
+        }
+      }
+    }
+    .week-selector {
+      width: 60%;
+
+      .dropdown-menu {
+        overflow: scroll;
+        height: 300px;
+      }
+
+      .dropdown {
+        &.open {
+          .dropdown-menu {
+            margin-top: 10px;
+            border: none;
+            box-shadow: 0 1px 12px rgba(0, 0, 0, 0.175);
+            overflow: scroll;
+            height: 300px;
+
+            > li {
+              > a {
+                color: $light-grey;
+              }
+            }
+
+            .arrow {
+              border-color: transparent;
+              border-bottom-color: rgba(0, 0, 0, 0.05);
+              border-top-width: 0;
+              border-width: 11px;
+              border-style: solid;
+              left: 20%;
+              margin-left: -11px;
+              top: -22px;
+              display: block;
+              height: 0;
+              position: absolute;
+              width: 0;
+              &::after {
+                border-color: transparent;
+                border-bottom-color: #fff;
+                border-width: 10px;
+                border-top-width: 0;
+                border-style: solid;
+                display: block;
+                height: 0;
+                width: 0;
+                position: absolute;
+                content: ' ';
+                margin-left: -10px;
+                top: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .assign-training {
+    .add-employees {
+      display: flex;
+
+      .company-dropdown {
+        width: 30%;
+        margin: 15px 0;
+
+        .label {
+          font-size: 12px;
+        }
+      }
+
+      .training-employee-selector {
+        width: 70%;
+      }
+    }
+
+    .disable-add-course[disabled] {
+      background: none;
+    }
+
+    .assign-label {
+      font-weight: 300;
+      margin: 0;
+      padding-bottom: 7px;
+      border-bottom: 1px solid $light;
+    }
+
+    .training-label {
+      padding: 15px 0;
+
+      p {
+        min-width: 50px;
+        font-weight: 300;
+        margin-bottom: 0;
+      }
+    }
+
+    .training-courses {
+      padding: 5px 0;
+      display: flex;
+      align-items: center;
+
+      .course-detail {
+        padding: 0;
+        display: flex;
+
+        p {
+          text-align: left;
+        }
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .custom-datepicker {
+        min-width: 65px;
+      }
+    }
+  }
+}

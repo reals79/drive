@@ -1,0 +1,29 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.library-status {
+  background-color: white;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  @media screen and (max-width: $screen-ssm) {
+    padding: 0 15px 8px 15px;
+    p {
+      margin-bottom: 8px;
+    }
+  }
+  .advanced-search {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    .chip {
+      background-color: $light;
+      border-radius: 5px;
+      margin-right: 5px;
+      padding: 7px 10px;
+    }
+  }
+}

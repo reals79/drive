@@ -1,0 +1,32 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.mng-reports {
+  .card {
+    padding: 0px;
+  }
+  .items {
+    width: 100%;
+    padding: 0 110px 110px;
+  }
+
+  .contents {
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: #f5f6f8;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    .items {
+      width: auto;
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: $screen-ssm) {
+    .items {
+      margin-top: 0px !important;
+    }
+  }
+}

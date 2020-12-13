@@ -1,0 +1,43 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.vendor-rating-search {
+  .vendor-rating-search-input,
+  .vendor-rating-search-results,
+  .vendor-rating-search-companies {
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 5px;
+
+    .search-input {
+      width: 50%;
+
+      input {
+        width: 100%;
+        min-width: 200px;
+      }
+
+      .far.fa-search {
+        display: none;
+      }
+    }
+
+    .search-tabs {
+      background-color: transparent;
+
+      .ds-tabs-tab {
+        background-color: transparent;
+
+        > div > p {
+          color: $primary;
+        }
+
+        &.active {
+          > div > p {
+            border-bottom: 1px solid $primary;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

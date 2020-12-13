@@ -1,0 +1,26 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.confirmation-modal {
+  @media (min-width: 768px) {
+    .modal-dialog {
+      width: 460px;
+      margin-top: 10%;
+    }
+  }
+  *:focus {
+    outline: 0 !important;
+  }
+
+  .modal-header {
+    background-color: #ffffff;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: flex-start;
+    border: none;
+  }
+
+  .modal-body {
+    flex-direction: column;
+  }
+}

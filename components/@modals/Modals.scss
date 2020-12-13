@@ -1,0 +1,97 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.app-modal {
+  padding: 0 24px;
+  
+  &.xlarge {
+    @media screen and (min-width: $screen-ssm) {
+      .modal-dialog {
+        max-width: 1000px;
+      }
+    }
+  }
+  &.mlarge {
+    @media screen and (min-width: $screen-ssm) {
+      .modal-dialog {
+        max-width: 900px;
+      }
+    }
+  }
+  &.large {
+    @media screen and (min-width: $screen-ssm) {
+      .modal-dialog {
+        max-width: 800px;
+      }
+    }
+  }
+  &.medium {
+    @media screen and (min-width: $screen-ssm) {
+      .modal-dialog {
+        max-width: 600px;
+      }
+    }
+  }
+  &.small {
+    @media screen and (min-width: $screen-ssm) {
+      .modal-dialog {
+        max-width: 470px;
+      }
+    }
+  }
+
+  &.landing-modal {
+    iframe {
+      border: unset;
+      background-color: white;
+    }
+    .modal-content {
+      background: none;
+      box-shadow: none;
+    }
+  }
+
+  &.quick-assign-modal {
+    @media screen and (min-width: $screen-ssm) {
+      .modal-dialog {
+        max-width: 275px;
+      }
+      .ds-datepicker-input {
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &.add-employee-modal {
+    @media screen and (min-width: $screen-ssm) {
+      .modal-dialog {
+        max-width: 864px;
+      }
+    }
+  }
+
+  &.confirm-modal {
+    @media screen and (min-width: $screen-ssm) {
+      .modal-dialog {
+        max-width: 500px;
+      }
+      .modal-content {
+        margin: 12rem 0;
+      }
+    }
+  }
+
+  &.bg-transparent {
+    .modal-dialog {
+      .modal-content {
+        background-color: transparent;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    padding: 0 10px 0 10px;
+  }
+  @media screen and (max-width: $screen-ssm) {
+    padding: 40px 0 40px 0;
+  }
+}

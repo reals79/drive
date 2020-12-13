@@ -1,0 +1,44 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.core-task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-top: 1px solid #e0e0e0;
+  cursor: pointer;
+  margin: 0px;
+
+  &:hover,
+  &:focus {
+    background-color: #f1f5fb;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 12px 20px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: none;
+    margin-bottom: 0;
+    & + .core-task-item {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding: 12px 20px;
+    }
+  }
+
+  .task-detail {
+    width: calc(100% - 26px - 65px - 16px);
+    padding: 0 20px;
+  }
+
+  .truncate-one:hover {
+    cursor: pointer;
+  }
+
+  .avatar-section {
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+}

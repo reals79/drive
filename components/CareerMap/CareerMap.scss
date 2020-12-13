@@ -1,0 +1,53 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.career-map {
+  flex: 1;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-left: 10px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .map-header {
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+  }
+  .map-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .check {
+      width: 30px;
+    }
+    .line-through {
+      text-decoration: line-through;
+    }
+    .career-name {
+      position: relative;
+      cursor: pointer;
+      &-modal {
+        display: none;
+        padding: 12px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 999;
+        width: 200px;
+        background-color: white;
+        border-radius: 4px;
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+      }
+      &:hover {
+        .career-name-modal {
+          display: block;
+        }
+      }
+    }
+  }
+}

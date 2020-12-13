@@ -1,0 +1,50 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.career-goals {
+  .header {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 30px;
+  }
+  .content {
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    min-height: 40px;
+    padding: 10px;
+    padding-left: 30px;
+
+    .my-goal {
+      margin-top: 15px;
+    }
+    .my-input {
+      border: none;
+      border-bottom: 1px solid $slight-grey;
+      border-radius: 0;
+      box-shadow: none;
+      margin-bottom: 10px;
+      padding-left: 0;
+    }
+    .pointer {
+      cursor: pointer;
+      word-break: break-word;
+    }
+    .edit {
+      float: right;
+      line-height: 20px;
+    }
+    .save {
+      background-color: $slight-grey;
+      border-radius: 15px;
+      color: white;
+      font-size: 12px;
+      padding-left: 30px;
+      padding-right: 30px;
+      height: 30px;
+      &.active {
+        background-color: $primary;
+      }
+    }
+  }
+}

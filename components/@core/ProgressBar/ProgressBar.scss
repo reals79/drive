@@ -1,0 +1,23 @@
+.ds-progress {
+  display: flex;
+  align-items: center;
+
+  .progress-title {
+  }
+
+  .progress {
+    border-radius: 5px;
+    height: 10px;
+    min-width: 130px;
+
+    .progress-bar {
+      border-radius: 5px;
+    }
+  }
+
+  .progress-label {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+  }
+}

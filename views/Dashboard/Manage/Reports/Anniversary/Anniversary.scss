@@ -1,0 +1,55 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.mng-anniversary {
+  .list-header {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+  }
+
+  .sort-item {
+    cursor: pointer;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .list-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 22px 0;
+  }
+
+  .company-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 8em;
+    height: 16px;
+  }
+
+  .core-pagination {
+    padding: 20px 0 0 0;
+  }
+  @media screen and (max-width: $screen-sm) {
+    .card {
+      padding: 20px !important;
+    }
+  }
+  @media screen and (max-width: $screen-ssm) {
+    .card {
+      padding: 15px !important;
+    }
+    .ds-datepicker {
+      margin-top: 3px;
+    }
+    .list-item {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .company-name {
+      padding-top: 30px;
+      height: 70px;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.cert-user,
+.cert-info,
+.cert-levels,
+.cert-requirements {
+  flex: 1;
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px 20px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .cert-user-content {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5px;
+
+    .avatar-container {
+      padding: 4px;
+      border-radius: 50%;
+      -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.75);
+    }
+  }
+
+  .levels-header {
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+  }
+
+  .levels-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .check {
+      width: 30px;
+    }
+    .line-through {
+      text-decoration: line-through;
+    }
+  }
+
+  .est-date {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slick-slider {
+    .slick-arrow {
+      top: -15px;
+      &.slick-prev {
+        left: auto;
+        right: 50px;
+      }
+      &.slick-next {
+        right: 0;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

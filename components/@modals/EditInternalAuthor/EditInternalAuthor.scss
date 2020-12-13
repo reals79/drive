@@ -1,0 +1,22 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.editinternalauthor-modal {
+  .core-dropdown {
+    &-toggle {
+      .core-dropdown-title {
+				width: 100px;
+				margin-right: 0 !important;
+      }
+    }
+  }
+  .core-input {
+		&-label {
+			width: 100px;
+		}
+		&-content {
+      .form-control {
+        margin-left: 0 !important;
+      }
+    }
+  }
+}

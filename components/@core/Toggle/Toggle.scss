@@ -1,0 +1,49 @@
+.ds-toggle {
+  &--llabel {
+    font-size: 16px;
+    margin-right: 10px;
+
+    &.active {
+      color: #343f4b;
+    }
+
+    &.inactive {
+      color: #969faa;
+    }
+  }
+  &--rlabel {
+    font-size: 16px;
+    margin-left: 10px;
+
+    &.active {
+      color: #343f4b;
+    }
+
+    &.inactive {
+      color: #969faa;
+    }
+  }
+
+  &--button {
+    display: flex;
+
+    label {
+      margin: 0 !important;
+    }
+
+    .switch-tag {
+      font-size: 15px;
+      margin-right: 5px;
+    }
+
+    &.disabled {
+      .react-switch-bg {
+        background-color: #c3c7cc !important;
+      }
+
+      .react-switch-handle {
+        background-color: #c3c7cc !important;
+      }
+    }
+  }
+}

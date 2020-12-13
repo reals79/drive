@@ -1,0 +1,53 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.rate-vendor-modal {
+  background-color: $white;
+
+  &-dropdown {
+    .core-dropdown-title {
+      width: 80px;
+    }
+  }
+
+  &-rating {
+    > span {
+      width: 80px !important;
+    }
+  }
+
+  &-status {
+    width: 125px;
+    height: 40px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $slight;
+    border-radius: 5px;
+  }
+
+  &-recommend-rate {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $middle-grey;
+    font-size: 12px;
+    border-radius: 15px;
+    border: 1px solid $light-grey;
+    &.active {
+      color: $white;
+      background-color: $primary;
+    }
+  }
+
+  &-input {
+    display: flex;
+    align-items: flex-start;
+    .core-input-label {
+      width: 80px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.landing-contact {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient($primary, $dark-blue);
+  .container {
+    .title {
+      color: white;
+      font-size: 32px;
+      font-weight: 200;
+      font-family: 'Regular Roboto', sans-serif;
+      line-height: 43px;
+      text-align: center;
+    }
+
+    .sub-title {
+      color: white;
+      font-size: 24px;
+      font-weight: 200;
+      font-family: 'Regular Roboto', sans-serif;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    .btn-demo {
+      color: white;
+      font-size: 22px;
+      text-transform: uppercase;
+      line-height: 29px;
+      font-weight: 400;
+      width: 190px;
+      height: 58px;
+      border: 1px solid white;
+      border-radius: 30px;
+      background-color: transparent;
+      margin: 20px 0;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .phone {
+      color: white;
+      font-size: 16px;
+      line-height: 21px;
+      margin-top: 20px;
+
+      .clickable-phone-number {
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+      }
+    }
+  }
+}

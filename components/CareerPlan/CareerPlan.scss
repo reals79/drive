@@ -1,0 +1,16 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.career-plan {
+  margin-top: 15px;
+  .header {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .content {
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+}

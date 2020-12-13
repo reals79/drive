@@ -1,0 +1,27 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.add-product-modal {
+  background-color: $white;
+
+  .company-list {
+    padding: 5px 10px;
+    max-height: 400px;
+    overflow: auto;
+    border: 1px solid $border-grey;
+    border-radius: 5px;
+  }
+
+  .item-plus {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $slight-grey;
+    border-radius: 5px;
+
+    &.selected {
+      border-color: $main-blue;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.assign-modal {
+  .modal-header {
+    padding: 20px;
+    background-color: $primary;
+    justify-content: center;
+  }
+
+  .modal-body {
+    padding: 20px;
+
+    .core-dropdown {
+      .core-dropdown-label {
+        span {
+          white-space: pre-wrap;
+        }
+      }
+    }
+
+    .duedate-calender {
+      margin-top: 17px;
+
+      .ds-datepicker-content {
+        position: unset;
+        width: fit-content;
+      }
+
+      .ds-datepicker-input {
+        width: fit-content;
+
+        .align-items-center {
+          span {
+            color: $dark-grey;
+          }
+        }
+      }
+    }
+
+    .nav-tabs {
+      padding: 0 0 25px 0;
+
+      .nav-item.active {
+        text-decoration: none;
+
+        &:after {
+          content: '';
+          height: 1px;
+          background: #376caf;
+          display: block;
+        }
+      }
+    }
+
+    .tab-content {
+      #assign-program-tabpane-career {
+        .core-input input {
+          background-color: #f6f7f8;
+        }
+      }
+    }
+  }
+
+  .list-container {
+    border: 1px solid #f5f6f8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    max-height: 395px;
+    padding: 10px;
+
+    .list-content {
+      overflow-y: scroll;
+
+      .list-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        padding: 3px;
+
+        .item-plus {
+          width: 45px;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid $slight-grey;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        &.active {
+          background-color: #f5f6f8;
+
+          .item-plus {
+            background-color: $primary;
+            border: none;
+
+            i {
+              color: $white !important;
+            }
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .core-pagination {
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 0;
+    }
+  }
+
+  .modal-footer {
+    border-top: none;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .core-button.high {
+      margin-left: auto;
+    }
+  }
+}

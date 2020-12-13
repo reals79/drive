@@ -1,0 +1,56 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.assignment-quota-card {
+  background-color: white !important;
+  padding: 20px 20px 0px 20px;
+  margin-bottom: 10px;
+
+  .d-flex-md-8 {
+    flex: 8;
+  }
+
+  .card-item {
+    display: flex !important;
+    padding: 20px 0px;
+  }
+}
+
+.assignments-scorecard-section {
+  background-color: white !important;
+  padding: 20px 20px 30px 20px;
+
+  .section-label {
+    min-width: 100px;
+    margin-bottom: 0;
+  }
+
+  .section-title {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+@media screen and (max-width: $screen-md) {
+  .assignments-scorecard-section {
+    .d-flex-md {
+      flex: 1;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .assignment-quota-card {
+    padding: 15px;
+    .d-flex-md-8 {
+      flex: 10;
+    }
+  }
+  .assignments-scorecard-section {
+    padding: 15px;
+    .d-flex-md {
+      display: none;
+    }
+  }
+}

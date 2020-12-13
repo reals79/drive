@@ -1,0 +1,144 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.mng-daily-work-plan {
+  .task-placeholder {
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .plan-tasks {
+    margin-right: 10px;
+    margin-top: 10px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .mtd-filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .training-list {
+    padding: 10px 20px 20px;
+    background-color: white;
+    border-radius: 5px;
+    .training-border-top {
+      border-top: 1px solid #e0e0e0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .scorecard-list {
+    background-color: white;
+    border-radius: 5px;
+
+    .box-detail {
+      max-height: 455px;
+      overflow-x: hidden;
+      padding: 10px 20px 20px;
+      @media screen and (max-width: $screen-sm) {
+        max-height: 300px;
+      }
+    }
+    .scorecard-title {
+      margin: 0px;
+      padding: 30px 20px 0px 20px;
+    }
+    .core-pagination-right-bottom {
+      display: none;
+    }
+    .core-pagination {
+      margin-left: 40px;
+    }
+  }
+  .checkout {
+    background: #376caf;
+    border-radius: 50px;
+    border-color: transparent;
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+    margin-left: auto;
+  }
+  .daily-work-child-modal {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    .lock-badge {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      height: 40px;
+      min-width: 250px;
+      padding-left: 20px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 20px;
+      color: $white;
+      font-size: 16px;
+      background-color: $dark-grey;
+    }
+    .lock-container {
+      height: calc(100% - 140px);
+    }
+  }
+}
+
+@media screen and (min-width: $screen-ssm) and (max-width: $screen-sm) {
+  .mng-daily-work-plan {
+    .plan-tasks {
+      margin-right: 0;
+    }
+    .task-detail-wrapper {
+      flex-direction: row;
+    }
+    .col-smd-12 {
+      -webkit-box-flex: 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .card-fix {
+      justify-content: start !important;
+    }
+    .mobile-dev {
+      .dsl-b14 {
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .mng-daily-work-plan {
+    padding: 0;
+    .card-fix {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      height: 60px;
+      width: 100%;
+      z-index: 8;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #e2e3e5;
+      .mobile-dev {
+        position: relative;
+        right: 40px;
+        z-index: 999;
+        top: 6px;
+        transform: translateY(-50%);
+        .dsl-b14 {
+          color: $middle-grey;
+          padding-left: 26px;
+        }
+      }
+    }
+    .training-list {
+      padding: 1px 15px 0 15px;
+      margin-top: 10px;
+    }
+    .plan-tasks {
+      margin-top: 10px;
+      margin-right: 0;
+    }
+  }
+}

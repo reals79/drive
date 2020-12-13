@@ -1,0 +1,39 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.vdra-company {
+  .core-dropdown {
+    &-title {
+      width: 90px;
+    }
+  }
+  .logospan {
+    width: 120px;
+  }
+  .core-input {
+    margin-bottom: 15px;
+    align-items: flex-start;
+    &-label {
+      width: 100px;
+      line-height: 40px;
+    }
+
+    &-content {
+      min-height: 40px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .core-select {
+    align-items: center;
+    &-label {
+      width: 105px;
+    }
+
+    &-input {
+      width: 150px;
+    }
+  }
+}

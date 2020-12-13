@@ -1,0 +1,95 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.core-text {
+  align-items: center;
+  margin-bottom: 0;
+
+  label {
+    margin-bottom: 0;
+  }
+  .input-group {
+    .form-control {
+      border: none;
+      border-color: $slight-grey;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 0 0 0 10px;
+      &:focus {
+        background-color: $light;
+        border: none !important;
+        & + .input-group-addon {
+          background-color: $light;
+          border: none;
+          cursor: pointer;
+          i {
+            display: block;
+          }
+        }
+      }
+    }
+    .input-group-addon {
+      background-color: transparent;
+      border: none;
+      width: 40px;
+      i {
+        display: none;
+      }
+    }
+    &:hover {
+      .form-control {
+        background-color: $light;
+        border-right: none;
+        border-left: 1px solid $slight-grey;
+        border-top: 1px solid $slight-grey;
+        border-bottom: 1px solid $slight-grey;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        &:disabled {
+          background-color: transparent;
+          border: none;
+          cursor: auto;
+          & + .input-group-addon {
+            display: none;
+          }
+        }
+      }
+      .input-group-addon {
+        background-color: $light;
+        border-left: none;
+        border-top: 1px solid $slight-grey;
+        border-right: 1px solid $slight-grey;
+        border-bottom: 1px solid $slight-grey;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+  }
+
+  // States
+  input[value=''] {
+    background-color: $light;
+    & + .input-group-addon {
+      background-color: $light;
+      border: none;
+      i {
+        display: none;
+      }
+    }
+  }
+  input[disabled] {
+    background-color: transparent;
+    cursor: auto;
+  }
+
+  // Directions
+  &.horizontal {
+    display: flex;
+  }
+  &.vertical {
+    display: block;
+
+    .form-control {
+      padding-left: 0;
+    }
+  }
+}

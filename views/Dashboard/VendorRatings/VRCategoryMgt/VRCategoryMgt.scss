@@ -1,0 +1,18 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.super-admin-vrcategorymgt {
+  .core-input {
+    &-content {
+      .form-control {
+        width: 300px;
+        margin-left: 0 !important;
+      }
+    }
+  }
+  .w80 {
+    width: 80px;
+  }
+  .h200 {
+    height: 200px;
+  }
+}

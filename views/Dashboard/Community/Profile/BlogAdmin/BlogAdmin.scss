@@ -1,0 +1,59 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.individual-blog-admin {
+  .blog-admin-header {
+    padding: 20px 20px 0;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+  }
+
+  .blog-admin-content {
+    padding: 20px;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+  }
+
+  .blog-admin-drafts,
+  .blog-admin-published {
+    min-height: 300px;
+    padding: 20px;
+    margin-top: -10px;
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: unset;
+  }
+
+  .blog-admin-category-mgt {
+    padding: 20px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .responsive-thumbnail {
+    min-width: 0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .core-pagination {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .category-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid $border-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

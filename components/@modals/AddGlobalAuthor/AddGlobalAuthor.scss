@@ -1,0 +1,12 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.addglobalauthor-modal {
+  .core-dropdown {
+    &-toggle {
+      .core-dropdown-title {
+        width: 100px;
+        margin-left: 0 !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.company-reports {
+  .capitalize {
+    text-transform: capitalize;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    i {
+      margin-top: 3px;
+    }
+  }
+  .no-left {
+    padding-left: 0;
+  }
+  .no-right {
+    padding-right: 0;
+  }
+
+  .report-item {
+    display: flex;
+    border-bottom: 1px solid #e2e3e5;
+
+    .title {
+      display: flex;
+      align-items: center;
+    }
+    .edit {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  .core-pagination {
+    justify-content: end;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .company-reports {
+    .card {
+      padding: 0 15px 15px 15px !important;
+    }
+  }
+}
+@media screen and (max-width: $screen-ssm) {
+  .custom-dropdown-mobile {
+    position: relative;
+    .mobile-screen {
+      position: absolute;
+      padding-top: 10px;
+    }
+    .core-dropdown-label {
+      padding-top: unset;
+    }
+    .core-dropdown .core-dropdown-toggle.horizontal .core-dropdown-label {
+      padding-left: unset;
+    }
+  }
+}

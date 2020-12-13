@@ -1,0 +1,40 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.training-course-header {
+  padding: 15px 0;
+
+  p {
+    min-width: 50px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+}
+
+.training-course-item {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid $light;
+
+  .course-detail {
+    padding: 0;
+    display: flex;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .col-xs-1 {
+    padding: 0;
+    text-align: center;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .custom-datepicker {
+    min-width: 65px;
+  }
+}

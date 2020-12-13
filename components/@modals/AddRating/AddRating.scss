@@ -1,0 +1,30 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.add-rating {
+  .modal-header {
+    background-color: $main-blue;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+  }
+  .modal-body {
+    padding: 20px;
+
+    .form-control {
+      height: 24px;
+    }
+    .scale-input {
+      background-color: $light;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid $light;
+      padding: 0 10px;
+      min-height: 35px;
+      text-align: right;
+    }
+  }
+  .modal-footer {
+    border-top: none;
+    text-align: center;
+  }
+}

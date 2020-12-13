@@ -1,0 +1,42 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.quota-reports {
+  .report-item {
+    display: flex;
+    border-bottom: 1px solid #e2e3e5;
+  }
+
+  .employees-button {
+    font-weight: 400;
+    background-color: white;
+    border: 1px solid #376caf;
+    color: #376caf;
+    padding: 5px 15px;
+  }
+
+  .employees-detail {
+    position: relative;
+    cursor: pointer;
+    &-modal {
+      display: none;
+      padding: 20px;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      z-index: 999;
+      width: 250px;
+      background-color: $white;
+      border-radius: 4px;
+      box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+    }
+    &:hover {
+      background-color: #e7eff8;
+    }
+
+    &:hover {
+      .employees-detail-modal {
+        display: block;
+      }
+    }
+  }
+}

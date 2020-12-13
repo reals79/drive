@@ -1,0 +1,51 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.report-training-schedule-detail {
+  .training-schedule-info {
+    padding: 30px 20px;
+    background-color: white;
+    margin-bottom: 10px;
+  }
+
+  .add-training-schedule {
+    .training-schedule-info {
+      .ds-datepicker-input {
+        padding: 0 8px;
+        cursor: pointer;
+        > div {
+          font-size: 16px;
+          color: $dark-grey !important;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .input-field {
+    margin-bottom: 25px;
+
+    .core-input-label {
+      line-height: 20px;
+    }
+
+    .core-input-content {
+      .form-control {
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 0;
+      }
+      .clear {
+        right: 15px;
+      }
+      .delete {
+        display: none;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}

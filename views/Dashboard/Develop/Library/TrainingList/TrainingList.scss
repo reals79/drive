@@ -1,0 +1,14 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.dev-library-training {
+  .library-course-card:last-child,.library-module-card:last-child,.library-track-card:last-child{
+    .lib-content {
+      border-bottom: 1px solid $border-grey;
+    }
+  }
+  @media screen and (max-width: $screen-ssm) {
+    .ds-search {
+      padding-left: 91px;
+    }
+  }
+}

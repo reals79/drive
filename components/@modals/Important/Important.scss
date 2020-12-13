@@ -1,0 +1,23 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.important-modal {
+  @media (min-width: 768px) {
+    .modal-dialog {
+      width: 460px;
+      margin-top: 10%;
+    }
+  }
+  .btn-negative {
+    border-radius: 20px;
+    width: 100px;
+    height: 34px;
+  }
+  .btn-positive {
+    border-radius: 20px;
+    width: 100px;
+    height: 34px;
+  }
+  *:focus {
+    outline: 0 !important;
+  }
+}

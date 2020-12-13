@@ -1,0 +1,28 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.super-admin-featuredcontent {
+  .tab-content {
+    .tab-pane {
+      .card-bottom {
+        .core-input {
+          &-content {
+            .form-control {
+              width: 300px;
+              margin-left: 0px;
+            }
+          }
+        }
+      }
+      .core-pagination {
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .card, .card-header, .card-bottom {
+    flex-direction: column;
+    .w70 {
+      width: 70px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.landing-class {
+  max-width: 250px;
+  padding: 0 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    color: white;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 200;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: $screen-lg) {
+  .landing-class {
+    padding: 0 30px;
+  }
+}

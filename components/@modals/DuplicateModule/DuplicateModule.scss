@@ -1,0 +1,11 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.duplicate-modal {
+  .modal-body {
+    padding: 30px;
+
+    .success-icon {
+      width: 40px;
+    }
+  }
+}

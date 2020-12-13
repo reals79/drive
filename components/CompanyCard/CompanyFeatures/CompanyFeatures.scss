@@ -1,0 +1,25 @@
+.vdra-features {
+  .core-input {
+    margin-bottom: 15px;
+    align-items: flex-start;
+    &-label {
+      width: 280px !important;
+      line-height: 40px;
+    }
+
+    &-content {
+      min-height: 40px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .core-dropdown {
+    &-title {
+      width: 200px;
+    }
+  }
+}
+  

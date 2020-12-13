@@ -1,0 +1,24 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.individual-reports {
+  .card {
+    .report-item {
+      display: flex;
+      border-bottom: 1px solid $light;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      .edit {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .core-pagination {
+    padding: 10px 0 0;
+  }
+}

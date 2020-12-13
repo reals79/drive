@@ -1,0 +1,43 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.cmp-performance-reports {
+  .list-title {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    border-bottom: 1px solid #e0e0e0;
+    height: 80px;
+    &:hover {
+      background-color: #e7eff8;
+      padding: 10px 25px;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+
+  .core-text {
+    input {
+      height: 30px;
+    }
+  }
+  .core-pagination {
+    padding: 20px 0 15px 0;
+  }
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .cmp-performance-reports {
+    .card {
+      padding: 15px !important;
+    }
+    .list-item {
+      padding: 0;
+    }
+  }
+}

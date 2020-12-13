@@ -1,0 +1,27 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+@media screen and (min-width: $screen-ssm) {
+  .approval-task {
+    .modal-dialog {
+      width: 450px;
+    }
+  }
+}
+
+.approval-task {
+  .modal-dialog {
+    .btn-approve {
+      color: $primary;
+      border-color: $primary;
+    }
+  }
+
+  .comment-contents {
+    max-height: 230px;
+    overflow: auto;
+    margin: 0 20px;
+    padding: 10px 0;
+    border-top: 0.5px solid rgba($color: $slight-grey, $alpha: 0.5);
+    border-bottom: 0.5px solid rgba($color: $slight-grey, $alpha: 0.5);
+  }
+}

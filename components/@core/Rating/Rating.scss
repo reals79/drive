@@ -1,0 +1,50 @@
+.ds-stars {
+  display: flex;
+  align-items: center;
+
+  &.vertical {
+    width: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .star-list {
+      margin-top: 0.5rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .star-list {
+    &.small {
+      .fa-star {
+        font-size: 13px;
+      }
+    }
+
+    &.medium {
+      .fa-star {
+        font-size: 20px;
+        margin-right: 3px;
+      }
+    }
+
+    &.large {
+      .fa-star {
+        font-size: 25px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .lh18 {
+    line-height: 18px;
+  }
+
+  .rating-feedback {
+    width: 100%;
+    padding-left: 0.5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

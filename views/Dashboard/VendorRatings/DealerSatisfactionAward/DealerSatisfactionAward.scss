@@ -1,0 +1,63 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.dealer-satisfaction-award {
+  .btn-vendor-ratings {
+    padding: 0;
+    padding-right: 5px;
+    color: #000;
+  }
+
+  .btn-see-winners {
+    color: white;
+    border-color: white;
+  }
+
+  .dealer-satisfaction-award-hero {
+    background-repeat: no-repeat;
+    background-image: url('/images/bg-dealer-satisfaction-award.jpg');
+    border-radius: 5px;
+    padding-top: 40%;
+    position: relative;
+    width: 100%;
+    height: 0;
+
+    .award-hero-section {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      padding: 20px;
+      display: flex;
+
+      .award-hero-detail {
+        .ds-satisfaction-logo {
+          width: 30%;
+        }
+      }
+    }
+  }
+
+  .dealer-satisfaction-award-photos {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .dealer-satisfaction-award-winners {
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 5px;
+
+    .opinion-count-section {
+      padding: 50px 20px;
+      margin: 0 -20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background: linear-gradient(0deg, rgba(26,83,155,1) 0%, rgba(54,107,174,1) 100%);
+    }
+  }
+}

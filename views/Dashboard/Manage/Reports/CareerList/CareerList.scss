@@ -1,0 +1,87 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.mng-career-list {
+  .career-container {
+    background-color: $white;
+    border-radius: 5px;
+    padding: 30px 20px;
+  }
+
+  .list {
+    padding-top: 20px;
+
+    .list-header {
+      display: flex;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 10px;
+    }
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 22px 0;
+    }
+  }
+  .wrap-title {
+    width: 11em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 16px;
+    margin: 0;
+  }
+  .core-pagination {
+    padding: 10px 0;
+  }
+  @media screen and (max-width: $screen-sm) {
+    .card {
+      padding-top: 15px !important;
+    }
+    .list {
+      .list-item {
+        padding: unset;
+      }
+    }
+  }
+  @media screen and (max-width: $screen-ssm) {
+    .employees {
+      .md-disabled {
+        pointer-events: unset;
+        i {
+          color: $black !important;
+        }
+      }
+    }
+    .card {
+      padding: 15px !important;
+    }
+    .list {
+      .list-item {
+        padding: unset;
+      }
+    }
+    .custom-right-border-sm {
+      min-width: 130px;
+    }
+    .custom-br-ssm {
+      padding-top: 26px;
+      margin-right: 0 !important;
+    }
+    .careers-report-list {
+      .border-right-sm {
+        border-right: 1px solid #e2e3e5;
+        height: 70px;
+      }
+      .hover-dropdown {
+        padding: 0;
+        .hover-dropdown-toggle {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+        }
+      }
+    }
+  }
+}

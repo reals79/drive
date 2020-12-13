@@ -1,0 +1,10 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.upgrade-company-profile-modal {
+  background-color: $white;
+  .core-input {
+    &-label {
+      width: 100px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.add-habit-modal {
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary;
+  }
+  .modal-body {
+    .settings-contents,
+    .modules-contents {
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+    }
+
+    .settings-habit {
+      .accordion__item {
+        .accordion__body {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+
+    .input-field {
+      margin-bottom: 25px;
+
+      .core-input-label {
+        line-height: 20px;
+      }
+
+      .core-input-content {
+        .form-control {
+          font-size: 16px;
+          line-height: 19px;
+          margin-right: 0;
+        }
+        .clear {
+          right: 15px;
+        }
+        .delete {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+  }
+}

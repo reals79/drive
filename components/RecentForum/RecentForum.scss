@@ -1,0 +1,25 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.recent-forum {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  .ml20 {
+    margin-left: 20px;
+  }
+  .forum-item {
+    padding: 3px 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: #e7eff8;
+    }
+  }
+
+  .custom-font {
+    span {
+      font-family: Roboto;
+    }
+  }
+  .w100 {
+    width: 100px;
+  }
+}

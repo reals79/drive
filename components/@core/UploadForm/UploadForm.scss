@@ -1,0 +1,152 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.ds-upload-form {
+  min-width: 100px;
+  max-width: 120px;
+  position: relative;
+  margin-left: 20px;
+
+  .image {
+    background-color: $light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid $light;
+    border-radius: 5px;
+    margin-bottom: 0;
+    padding-top: 55%;
+    width: 100%;
+    height: 0;
+  }
+
+  .placeholder {
+    padding-left: 15px;
+  }
+
+  .icon {
+    width: 100%;
+    border: 1px solid $light;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .label {
+      color: $light-grey;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+      padding-top: 5px;
+    }
+  }
+  &.tiny {
+    min-width: 100px;
+    max-width: 120px;
+    i {
+      font-size: 14px !important;
+    }
+
+    .icon {
+      min-height: 55px;
+      i {
+        font-size: 12px !important;
+      }
+      .label {
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+  }
+  &.small {
+    min-width: 105px;
+    max-width: 110px;
+    i {
+      font-size: 20px !important;
+    }
+
+    .icon {
+      min-height: 70px;
+      i {
+        font-size: 16px !important;
+      }
+      .label {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+  &.regular {
+    min-width: 160px;
+    max-width: 180px;
+    i {
+      font-size: 22px !important;
+    }
+
+    .icon {
+      min-height: 85px;
+      i {
+        font-size: 18px !important;
+      }
+      .label {
+        color: $light-grey;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+  &.medium {
+    min-width: 320px;
+    max-width: 350px;
+    i {
+      font-size: 26px !important;
+    }
+
+    .icon {
+      min-height: 175px;
+      i {
+        font-size: 22px !important;
+      }
+      .label {
+        color: $light-grey;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+  &.large {
+    min-width: 470px;
+    max-width: 500px;
+    i {
+      font-size: 32px !important;
+    }
+
+    .icon {
+      min-height: 260px;
+      i {
+        font-size: 26px !important;
+      }
+      .label {
+        color: $light-grey;
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+  }
+  &.responsive {
+    min-width: 100px;
+    max-width: 1500px;
+    i {
+      font-size: 14px !important;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .ds-upload-form {
+    &.tiny {
+      min-width: 70px;
+      max-width: 100px;
+    }
+  }
+}

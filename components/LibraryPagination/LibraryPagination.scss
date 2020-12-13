@@ -1,0 +1,38 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.library-pagination {
+  background-color: white;
+  border-color: transparent !important;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  .right {
+    float: right;
+  }
+
+  .ui.inline.dropdown {
+    color: $primary;
+  }
+
+  .pages {
+    padding: 3px;
+    cursor: pointer;
+    color: #969faa;
+    &.active {
+      text-decoration: underline;
+      color: #000;
+    }
+  }
+
+  .current {
+    padding: 3px;
+    color: #969faa;
+    &.active {
+      color: #000;
+    }
+  }
+
+  .pages-left {
+    padding-left: 3px;
+  }
+}

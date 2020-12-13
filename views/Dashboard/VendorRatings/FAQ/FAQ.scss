@@ -1,0 +1,57 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.vendor-rating-faq {
+  .popular-que-category {
+    padding: 30px 20px;
+    background-color: $white;
+    border-radius: 5px;
+
+    .product {
+      margin-left: 3.166666667%;
+      .popular-product {
+        min-width: 135px;
+        min-height: 190px;
+        text-align: center;
+        justify-items: center;
+        display: inline-grid;
+        .title {
+          min-height: 90px;
+        }
+      }
+    }
+  }
+  .line-height {
+    line-height: 1.4;
+  }
+  .dsl-b15 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .dsl-b14 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .vendor-rating-faq {
+    padding-top: 20px;
+    .flex-col {
+      flex-direction: column;
+      text-align: right;
+    }
+    p {
+      font-size: 14px;
+      text-align: left;
+    }
+    .btn-width {
+      width: 50%;
+    }
+    .btn-justify {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .pt-none {
+      padding-top: 0px;
+    }
+  }
+}

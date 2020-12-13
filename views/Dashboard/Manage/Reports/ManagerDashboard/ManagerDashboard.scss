@@ -1,0 +1,126 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.mng-dashboard {
+  .top-stats {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .training-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    background-color: #f1f6ff;
+    border-radius: 5px;
+    padding: 10px 0;
+  }
+  .performance-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1fff1;
+    border-radius: 5px;
+    padding: 10px 0;
+  }
+  .tasks-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    background-color: #fffbf1;
+    border-radius: 5px;
+    padding: 10px 0;
+  }
+  .career-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    background-color: #fff2f1;
+    border-radius: 5px;
+    padding: 10px 0;
+  }
+  .newhire-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    background-color: #f8f1ff;
+    border-radius: 5px;
+    padding: 10px 0;
+  }
+  .employee-card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #fff2f1;
+    margin-right: 15px;
+    padding: 10px 0;
+  }
+
+  .ds-progress--progress .progress {
+    height: 10px;
+  }
+  .justify-end {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .custom-wrap-block {
+    display: flex;
+    width: 100%;
+  }
+  .custom-width {
+    width: 50%;
+  }
+  .score-hide {
+    .ds-stars {
+      .star-list {
+        > span {
+          &:last-child {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+  .score-star {
+    .ds-stars {
+      .star-list {
+        &.small {
+          .fa-star {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .mng-dashboard {
+    .card {
+      margin-top: 15px;
+      padding: 15px !important;
+    }
+    .custom-wrap-block {
+      display: block;
+    }
+    .custom-width {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .mng-dashboard {
+    .top-stats {
+      display: none;
+    }
+    .core-button.size-small {
+      font-size: 13px;
+    }
+  }
+}

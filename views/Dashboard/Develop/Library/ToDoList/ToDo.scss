@@ -1,0 +1,9 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.dev-library-todo {
+  @media screen and (max-width: $screen-ssm) {
+    .ds-search {
+      padding-left: 155px;
+    }
+  }
+}

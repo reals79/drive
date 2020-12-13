@@ -1,0 +1,35 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.company-profile-blog {
+  display: flex;
+
+  .blog-category-section,
+  .blog-department-section {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+
+    .category-logo,
+    .department-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      border: 1px solid $border-grey;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .d-flex-3 {
+    max-width: 70%;
+  }
+}
+
+.post-body {
+  display: inline-block;
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}

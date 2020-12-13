@@ -1,0 +1,156 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.core-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+
+  .core-input-label {
+    color: $middle-grey;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+  }
+
+  .core-input-content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    position: relative;
+
+    textarea,
+    input {
+      background-color: $slight;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      box-shadow: none;
+      font-size: 16px;
+      font-weight: 300;
+      padding: 0 22px 0 10px;
+      text-overflow: ellipsis;
+      &:focus {
+        background-color: $slight;
+        border: none !important;
+        box-shadow: none;
+        padding-right: 22px !important;
+        outline: none;
+        // & + .clear {
+        //   display: block;
+        // }
+        & ~ .delete {
+          background-color: transparent !important;
+          i {
+            display: none !important;
+          }
+        }
+      }
+      &:hover {
+        background-color: $slight;
+        border: 1px solid $slight-grey;
+      }
+      &:disabled {
+        background-color: transparent;
+        border: none;
+        cursor: auto;
+      }
+    }
+    input {
+      height: 37px;
+    }
+    textarea {
+      padding: 5px 10px;
+    }
+
+    .clear {
+      display: none;
+      position: absolute;
+      right: 3px;
+      z-index: 1000;
+    }
+
+    .delete {
+      background-color: transparent;
+      border-radius: 5px;
+      width: 24px;
+      height: 24px;
+      i {
+        display: none;
+      }
+    }
+
+    .error {
+      position: absolute;
+      bottom: -20px;
+      left: 30px;
+    }
+  }
+
+  &:hover {
+    .delete {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $slight;
+      border: none;
+      cursor: pointer;
+      i {
+        display: block;
+      }
+    }
+  }
+
+  // Directions
+  &.horizontal {
+    flex-direction: row;
+    .core-input-content {
+      textarea,
+      input {
+        margin-left: 20px;
+      }
+    }
+  }
+  &.vertical {
+    flex-direction: column;
+    align-items: flex-start;
+    .core-input-label {
+      margin-bottom: 5px;
+    }
+    .core-input-content {
+      width: 100%;
+      textarea,
+      input {
+        margin-left: 0;
+        width: 100%;
+      }
+      .error {
+        left: 10px;
+      }
+    }
+  }
+  &.remove {
+    input,
+    textarea {
+      margin-right: 10px;
+    }
+    .clear {
+      right: 40px;
+    }
+  }
+  &.focused {
+    .clear {
+      display: block;
+    }
+  }
+  &.error {
+    textarea,
+    input {
+      border: 1px solid $red !important;
+    }
+  }
+
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+}

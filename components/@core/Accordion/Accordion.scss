@@ -1,0 +1,110 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.core-accordion {
+  .accordion__item {
+    border: none;
+
+    .accordion__title {
+      padding: 10px 0;
+      background-color: white;
+      border-bottom: 1px solid $slight-grey;
+
+      &:focus {
+        outline: none;
+      }
+
+      .u-position-relative {
+        display: flex;
+        align-items: center;
+
+        .accordion__arrow {
+          width: 16px;
+          margin-top: 0;
+          margin-left: 3px;
+          position: relative;
+          transform: rotate(180deg);
+          transition: transform 0.25s ease;
+
+          &::after,
+          &::before {
+            width: 5px;
+            height: 2px;
+            background-color: $slight-grey;
+          }
+
+          &::after {
+            transform: rotate(-45deg);
+          }
+
+          &::before {
+            transform: rotate(45deg);
+          }
+        }
+      }
+
+      &[aria-expanded='true'],
+      &[aria-selected='true'] {
+        .u-position-relative {
+          .accordion__arrow {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+
+  &.secondary {
+    .accordion__item {
+      .accordion__title {
+        .u-position-relative {
+          > div {
+            i {
+              color: $middle-grey !important;
+            }
+            p {
+              color: $dark-grey !important;
+            }
+          }
+
+          .accordion__arrow {
+            &::before,
+            &::after {
+              background-color: $middle-grey !important;
+            }
+          }
+        }
+      }
+
+      [aria-expanded='false'] .accordion__arrow,
+      [aria-selected='false'] .accordion__arrow {
+        transform: rotate(270deg);
+      }
+    }
+  }
+
+  &.regular {
+    .accordion__item {
+      .accordion__title {
+        .u-position-relative {
+          > div {
+            i {
+              font-size: 25px !important;
+            }
+            p {
+              font-size: 18px;
+              line-height: 22px;
+            }
+          }
+
+          .accordion__arrow {
+            width: 19px;
+            &::before,
+            &::after {
+              width: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

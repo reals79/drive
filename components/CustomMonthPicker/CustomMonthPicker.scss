@@ -1,0 +1,78 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.custom-month-picker {
+  .rc-calendar {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 1px #ccc;
+  }
+
+  .rc-calendar-month-calendar-content {
+    .rc-calendar-month-header-wrap {
+      height: 250px;
+
+      .rc-calendar-month-panel {
+        border-radius: 5px;
+
+        .rc-calendar-month-panel-header {
+          height: 50px;
+          line-height: 45px;
+          border: none;
+
+          a {
+            color: $light-grey;
+            font-size: 17px;
+          }
+
+          .rc-calendar-month-panel-year-select {
+            color: $dark-grey;
+          }
+
+          .rc-calendar-month-panel-prev-year-btn,
+          .rc-calendar-month-panel-next-year-btn {
+            font-family: 'Font Awesome 5 Pro';
+            font-weight: 300;
+            font-size: 25px;
+          }
+
+          .rc-calendar-month-panel-prev-year-btn {
+            left: 10px;
+
+            &::after {
+              content: '\f104'
+            }
+          }
+
+          .rc-calendar-month-panel-next-year-btn {
+            right: 10px;
+
+            &::after {
+              content: '\f105'
+            }
+          }
+        }
+
+        .rc-calendar-month-panel-body {
+          .rc-calendar-month-panel-tbody {
+            border-top: 1px solid $light;
+
+            .rc-calendar-month-panel-cell {
+              .rc-calendar-month-panel-month {
+                width: 36px;
+                height: 36px;
+                border-radius: 20px;
+              }
+
+              &.rc-calendar-month-panel-selected-cell {
+                .rc-calendar-month-panel-month {
+                  color: #0086fd;
+                  background-color: #d2e6ff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

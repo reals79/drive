@@ -1,0 +1,131 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.learn-feed-list-container {
+  display: flex;
+  align-items: center;
+  background-color: #e7eff8;
+
+  &.bulked {
+    background-color: $sub;
+  }
+
+  .learn-feed-list {
+    background-color: white;
+    padding: 0 20px;
+    flex: 1;
+
+    .list-contents {
+      padding: 15px 0;
+      display: flex;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .feed-container {
+      display: flex;
+      flex: 1;
+
+      &.opacity-6 {
+        opacity: 0.6 !important;
+      }
+    }
+  }
+
+  .bulk-unassign {
+    width: 50px;
+    height: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .learn-feed {
+    .media {
+      .media-left {
+        width: 66.66666667%;
+      }
+      .body {
+        width: 33.33333333%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-md) {
+  .learn-feed {
+    .media {
+      .media-left {
+        .grid-card-top {
+          .course-top-title {
+            display: block !important;
+            .due-date {
+              display: flex;
+              margin-top: 10px;
+              p {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .learn-feed {
+    .media {
+      .media-left {
+        .feed-description {
+          height: auto;
+        }
+      }
+      .body {
+        .mcontent {
+          height: auto;
+          max-height: 340px;
+        }
+      }
+    }
+    &.list-mode {
+      .media {
+        .media-left {
+          width: 100% !important;
+        }
+        .body {
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .learn-feed-list-container {
+    .list-contents {
+      .feed-container {
+        .d-flex-ssm-2 {
+          .modules-ssm {
+            padding-right: 40px;
+          }
+        }
+        .text-wrap-sm {
+          width: 10em;
+          height: 20px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .text-wrap-ssm {
+          height: unset;
+          white-space: unset;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+}

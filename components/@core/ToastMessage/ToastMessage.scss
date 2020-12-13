@@ -1,0 +1,14 @@
+.ds-tm {
+  margin-top: -24px;
+  align-items: baseline;
+  text-indent: initial;
+  word-break: break-all;
+
+  &--title {
+    font-size: 16px;
+  }
+
+  &--description {
+    font-size: 14px;
+  }
+}

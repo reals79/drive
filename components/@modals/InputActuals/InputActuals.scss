@@ -1,0 +1,159 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.input-actuals-modal {
+  .modal-header {
+    height: 60px;
+  }
+  .modal-body {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .date-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 30px 0;
+      .date-avatar {
+        border-radius: 18px;
+        width: 36px;
+        height: 36px;
+      }
+    }
+    .core-input {
+      input {
+        font-size: 14px;
+        margin-left: 0;
+        text-align: right;
+        width: 70px;
+        padding-right: 10px;
+        font-weight: 400;
+      }
+    }
+    .fa-comment {
+      &:hover {
+        & ~ .comment-slide {
+          background-color: red !important;
+        }
+      }
+    }
+    .quota-check {
+      width: 40px;
+
+      .quota-checkbox {
+        .check-box {
+          border-color: $dark-grey !important;
+
+          &::before,
+          &::after {
+            background-color: $dark-grey;
+          }
+        }
+      }
+    }
+    .quota-comment {
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 58px;
+    }
+    .comment-popup {
+      background-color: white;
+      border-radius: 3px;
+      box-shadow: -2px 2px 10px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      position: absolute;
+      top: 25px;
+      right: 0;
+      width: 350px;
+      max-height: 250px;
+      min-height: 85px;
+      overflow-y: auto;
+      z-index: 1;
+      &.cmt {
+        width: 200px;
+        min-height: 65px;
+      }
+
+      .comment-avatar {
+        border-radius: 18px;
+        width: 36px;
+        height: 36px;
+      }
+      input {
+        text-align: left;
+        width: 100%;
+      }
+    }
+    .d-h-end {
+      .truncate-one {
+        color: $main-blue;
+        font-weight: 400;
+      }
+    }
+    .lh-100 {
+      min-height: 100px;
+    }
+  }
+
+  .modal-footer {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .input-actuals-modal {
+    .modal-body {
+      padding: 20px 2px 0 15px;
+      .quota-header {
+        min-width: 250px;
+        max-width: 450px;
+        justify-content: space-between;
+        width: 100%;
+        .title {
+          width: 150px;
+        }
+        .note {
+          margin-left: 5px;
+          margin-right: 15px;
+        }
+      }
+      .quota-list {
+        min-width: 250px;
+        max-width: 450px;
+        justify-content: space-between;
+        width: 100%;
+        .core-input {
+          .core-input-label {
+            width: 80px;
+          }
+          .core-input-content {
+            width: 112px;
+            input {
+              margin-left: 10px;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+      .d-h-end,
+      .d-h-start {
+        justify-content: center !important;
+      }
+      .quota-comment {
+        position: absolute;
+        left: 315px;
+      }
+      .comment-popup {
+        right: 40px;
+        width: 340px;
+        .d-h-end {
+          justify-content: flex-end !important;
+        }
+      }
+    }
+  }
+}

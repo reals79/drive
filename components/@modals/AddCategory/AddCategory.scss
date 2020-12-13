@@ -1,0 +1,13 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.add-category-modal {
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-body {
+    padding: 20px 30px;
+  }
+}

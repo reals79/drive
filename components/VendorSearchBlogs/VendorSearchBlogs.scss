@@ -1,0 +1,21 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.vendor-search-blogs {
+  .vendor-search-blogs-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $slight-grey;
+  }
+
+  .vendor-search-blogs-item {
+    padding: 20px 0;
+
+    &.detail {
+      border-bottom: 1px solid $slight-grey;
+    }
+  }
+}

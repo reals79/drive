@@ -1,0 +1,46 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.advanced-search {
+  .modal-dialog {
+    max-width: 900px;
+  }
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary;
+  }
+  .modal-body {
+    padding: 20px;
+
+    .option-label {
+      color: $dark-grey;
+      padding: 5px 0;
+    }
+
+    .option-item {
+      color: $dark-grey;
+      font-weight: 300;
+      margin-bottom: 2px;
+      padding: 5px 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $light-blue;
+      }
+
+      &.active {
+        background-color: $light-blue;
+      }
+    }
+
+    .border-r {
+      border-right: 1px solid $slight-grey;
+    }
+  }
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    border-top: none;
+  }
+}

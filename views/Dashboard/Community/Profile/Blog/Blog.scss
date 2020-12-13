@@ -1,0 +1,44 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.individual-profile-blog {
+  display: flex;
+
+  .card-header {
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .card-content {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .blog-category-section,
+  .blog-department-section {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+
+    .category-logo,
+    .department-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      border: 1px solid $border-grey;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .d-flex-3 {
+    max-width: 75%;
+  }
+
+  .blog-detail {
+    img {
+      width: 100%;
+    }
+  }
+}

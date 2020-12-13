@@ -1,0 +1,15 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.training-competency-report {
+  .training-competency-report-item {
+    background-color: white;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .report-item {
+      display: flex;
+      border-bottom: 1px solid #e2e3e5;
+    }
+
+  }
+}

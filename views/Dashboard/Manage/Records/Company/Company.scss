@@ -1,0 +1,136 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.company-info {
+  .info {
+    background-color: #213768;
+    border-radius: 5px;
+    .top {
+      display: flex;
+      background-image: url('/images/employee-banner.png');
+      background-size: 100% 100%;
+      padding-top: 100px;
+      width: 100%;
+      height: 200px;
+      .left {
+        display: flex;
+        justify-content: center;
+        width: 150px;
+      }
+      .right {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        margin-top: -10px;
+        padding-right: 20px;
+        position: relative;
+      }
+    }
+    .bottom {
+      display: flex;
+      align-items: center;
+      background-color: $primary;
+      padding-left: 150px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      width: 100%;
+      height: 40px;
+      .tab {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100%;
+        &.active {
+          background-color: $sub;
+        }
+
+        .core-dropdown {
+          .core-dropdown-label {
+            &:hover {
+              background-color: transparent;
+            }
+            i,
+            span {
+              color: white !important;
+            }
+          }
+          .core-dropdown-menu {
+            background-color: #6899d7;
+            width: 200px;
+            .core-dropdown-item {
+              &:hover,
+              &.active {
+                background-color: transparent;
+              }
+              span {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+      .gap {
+        background-color: $sub;
+        margin-left: -1px;
+        width: 1px;
+        height: 60%;
+      }
+    }
+  }
+  .card {
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    padding: 20px;
+    .ds-stars {
+      height: 30px;
+    }
+    .core-dropdown {
+      margin-bottom: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .core-dropdown-title {
+        width: 130px;
+      }
+      .core-dropdown-label {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .caret {
+        bottom: 20px !important;
+      }
+      &.ellipsis {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 20px;
+      }
+    }
+    .core-input {
+      margin-bottom: 5px;
+      .core-input-label {
+        width: 100px;
+      }
+      .core-input-content {
+        input {
+          margin-right: 0;
+        }
+        .clear {
+          right: 10px;
+        }
+        .delete {
+          display: none;
+        }
+      }
+    }
+    .connection {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $light;
+    }
+  }
+  .p-50 {
+    padding: 0 50px 20px 50px;
+  }
+}

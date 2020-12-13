@@ -1,0 +1,41 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.add-task-modal {
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary;
+  }
+  .modal-body {
+    .task-input,
+    .task-text {
+      .form-control {
+        margin-right: 0;
+      }
+      .clear {
+        display: none;
+      }
+      .delete {
+        display: none;
+      }
+    }
+    .task-text {
+      height: 100%;
+      textarea {
+        min-height: 60px;
+      }
+    }
+    .ds-datepicker-content {
+      bottom: 0px !important;
+    }
+    .ds-datepicker-input {
+      align-items: flex-start;
+    }
+  }
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+  }
+}

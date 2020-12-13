@@ -1,0 +1,63 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.save-actuals-modal {
+  padding: 30px 20px;
+  .tab-content {
+    .tab-pane {
+      .core-input {
+        &-content {
+          .form-control {
+            width: 80px;
+            margin-left: 0px;
+          }
+        }
+      }
+      .ds-progress {
+        .progress-label {
+          width: 30px;
+        }
+      }
+    }
+  }
+  .quota-comment {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 58px;
+  }
+  .comment-popup {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: -2px 2px 10px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 350px;
+    max-height: 250px;
+    min-height: 85px;
+    overflow-y: auto;
+    z-index: 1;
+    &.cmt {
+      width: 200px;
+      min-height: 65px;
+    }
+    .core-input {
+      &-content {
+        .form-control {
+          width: 280px !important;
+        }
+      }
+    }
+  }
+  .lh-100 {
+    min-height: 100px;
+  }
+  .lh-60 {
+    min-height: 60px;
+    .ml5 {
+      margin-left: 5px;
+    }
+  }
+}
+  

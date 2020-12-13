@@ -1,0 +1,18 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.super-admin-usermgt {
+  .core-input {
+    &-content {
+      .form-control{
+        width: 300px;
+        margin-left: 0 !important;
+      }
+    }
+  }
+  .w50 {
+    width: 50px;
+  }
+  .h80 {
+    height: 80px;
+  }
+}

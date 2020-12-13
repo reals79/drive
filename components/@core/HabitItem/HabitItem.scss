@@ -1,0 +1,23 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.core-habit-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #e0e0e0;
+  cursor: pointer;
+  margin: 0px;
+
+  &:hover,
+  &:focus {
+    background-color: #f1f5fb;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 10px 20px 10px 20px;
+    & + .core-task-item {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding: 10px 20px 10px 20px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.footer {
+  background-color: #696969;
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+
+    .footer-left,
+    .footer-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-icon {
+      margin-right: 16px;
+      opacity: 0.5;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    .divider {
+      width: 1px;
+      height: 14px;
+      background-color: $light-grey;
+      margin: 0 16px;
+    }
+
+    .social-icon {
+      margin-right: 16px;
+      opacity: 0.3;
+    }
+
+    .company-info {
+      color: white;
+      font-size: 12px;
+      line-height: 16px;
+      opacity: 0.5;
+    }
+  }
+}
+@media screen and (max-width: $screen-ssm) {
+  .footer {
+    .footer-content {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.vendor-search-training {
+  .vendor-search-training-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $slight-grey;
+  }
+
+  .vendor-search-training-item {
+    padding: 20px 0;
+
+    &.detail {
+      border-bottom: 1px solid $slight-grey;
+
+      .training-item-sub {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 1rem;
+        min-width: 55px;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.ds-imagepicker {
+  
+}
+
+.ds-crop-modal {
+  border: 2px solid white;
+  overflow: hidden;
+  .crop-content {
+    padding: 2px;
+  }
+}

@@ -1,0 +1,41 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.library-document-card {
+  background-color: white;
+  padding: 0 20px;
+
+  .document-list-card {
+    padding: 20px 0;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-bottom: 1px solid $light;
+    cursor: pointer;
+  }
+  .edit {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .detail-content {
+    padding: 20px 0;
+    width: 100%;
+    .settings {
+      .accordion__item {
+        .accordion__body {
+          padding: 30px 0 0;
+        }
+      }
+    }
+  }
+  .list-card {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid $light;
+    flex: 1;
+    padding: 20px 0;
+  }
+}

@@ -1,0 +1,44 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.manage-report-certifications {
+  .core-pagination {
+    padding: 20px 0 0;
+  }
+  @media screen and (max-width: $screen-sm) {
+    .card {
+      padding: 20px;
+    }
+    .core-filter {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.nav-tabs .nav-item {
+  line-height: 90%;
+}
+
+@media screen and (max-width: $screen-ssm) {
+  .manage-report-certifications {
+    .card {
+      padding: 15px !important;
+    }
+  }
+  .employees-report-list,
+  .manage-report-certifications {
+    .d-flex-ssm-5 {
+      padding-right: 0;
+    }
+    .hover-dropdown {
+      .hover-dropdown-toggle {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+      }
+    }
+    .edit-dm-col {
+      div {
+        margin-right: 5px;
+      }
+    }
+  }
+}

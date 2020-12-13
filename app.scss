@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+$fa-font-path: '~@fortawesome/fontawesome-pro/webfonts';
+@import '~@fortawesome/fontawesome-pro/css/all.css';
+
+// Bootstrap customization start
+// Bootstrap themes
+$primary: #376caf;
+
+@import '~bootstrap/scss/bootstrap';
+
+.navbar {
+  padding: 0 1rem;
+}
+.navbar-nav a.active {
+  color: $white !important;
+}
+.btn {
+  &:focus,
+  &:focus:active {
+    outline: none;
+  }
+}
+.btn-light {
+  background-color: transparent !important;
+  border: none !important;
+  &:hover {
+    background-color: transparent !important;
+    border: none !important;
+  }
+  &:active,
+  &:focus {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none;
+  }
+}
+.tooltip.in {
+  opacity: unset !important;
+}
+.tooltip-inner {
+  background-color: #fff !important;
+  color: black;
+  box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.65);
+}
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #fff !important;
+}
+.modal-content {
+  border: none;
+  .modal-header {
+    background-color: #376caf;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-footer {
+    border-top: none;
+  }
+}
+.nav-tabs {
+  background-color: transparent;
+  border-bottom: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .nav-item {
+    background-color: transparent !important;
+    border-color: #969faa !important;
+    border: none;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 15px;
+    border-right: 1px solid #969faa;
+    border-radius: 0;
+    &.active {
+      color: $primary;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    &:focus {
+      outline: unset;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      border-right: 0 !important;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+}
+// Bootstrap customization end
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+// Date Range Picker
+
+.DateRangePicker__CalendarSelection {
+  background-color: #eaf2ff !important;
+  border-color: #eaf2ff !important;
+}
+.DateRangePicker__Date--is-selected {
+  color: unset !important;
+}
+.DateRangePicker__CalendarHighlight--single {
+  border-color: #d7e6ff !important;
+}
+
+// Message
+
+#titlediv {
+  display: none;
+}
+
+// Toast Message Customizations
+
+.Toastify {
+  &__toast-container {
+    min-width: 50px;
+  }
+
+  &__toast {
+    display: block !important;
+    border-radius: 6px !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    float: right;
+
+    &--success {
+      width: 100% !important;
+      background: rgba(0, 0, 0, 0) !important;
+      box-shadow: none !important;
+      min-height: 30px;
+
+      .Toastify__toast-body::before {
+        margin: 0 5px;
+        left: 0.012em;
+        content: '\f058';
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 300;
+        color: #16ac10;
+        padding: 2px 4px;
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    &--warning {
+      width: 100% !important;
+      background: rgba(0, 0, 0, 0) !important;
+      box-shadow: none !important;
+
+      .Toastify__toast-body::before {
+        margin: 0 5px;
+        left: 0.012em;
+        content: '\f05a';
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 300;
+        color: #ff9100;
+        padding: 2px 8px;
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    &--error {
+      width: 100% !important;
+      background: rgba(0, 0, 0, 0) !important;
+      box-shadow: none !important;
+
+      .Toastify__toast-body::before {
+        margin: 0 5px;
+        left: 0.012em;
+        content: '\f057';
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 300;
+        color: #ff0000;
+        padding: 2px 6px;
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    &-body {
+      display: inline-block;
+      flex: 0 !important;
+      padding: 16px 20px 16px 38px;
+      border-radius: 6px;
+      box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+      background-color: #fff;
+      color: #343f4b !important;
+      text-indent: -35px;
+      white-space: pre-line;
+    }
+  }
+
+  &__close-button {
+    position: absolute;
+    right: 0 !important;
+    overflow: hidden;
+    text-indent: -60px;
+  }
+
+  &__close-button::after {
+    margin-right: 5px;
+    left: 0.012em;
+    content: '\f00d';
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 300;
+    color: #c3c7cc;
+    padding: 2px 6px;
+    width: 25px;
+    height: 25px;
+    float: left;
+    text-indent: 0;
+  }
+
+  &__progress-bar {
+    background-color: rgba(255, 255, 255, 0) !important;
+  }
+}
+
+.custom-item-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.zsiq_theme1 {
+  .zsiq_flt_rel {
+    background-color: $primary !important;
+  }
+  .zsiq_user.siqico-chat {
+    background-color: $primary !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .zsiq_theme1 {
+    display: none !important;
+  }
+}
+
+.quill {
+  .ql-toolbar {
+    background-color: white;
+  }
+  .ql-editor {
+    background-color: #f6f7f8;
+  }
+}

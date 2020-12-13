@@ -1,0 +1,20 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.add-document-modal {
+  .modal-header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $main-blue;
+    height: 40px;
+  }
+  .modal-body {
+    padding: 20px;
+  }
+  .modal-footer {
+    border: none;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}

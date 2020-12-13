@@ -1,0 +1,149 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.core-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  line-height: 1;
+  min-width: 80px;
+  padding: 0 15px;
+
+  .lds-dual-ring {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    &:after {
+      content: ' ';
+      display: block;
+      width: 46px;
+      height: 46px;
+      margin: 1px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      border-color: #fff transparent #fff transparent;
+      animation: lds-dual-ring 1.2s linear infinite;
+    }
+
+    &.ring-18 {
+      width: 18px;
+      height: 18px;
+      &:after {
+        width: 18px;
+        height: 18px;
+        border-width: 2px;
+      }
+    }
+    &.ring-24 {
+      width: 24px;
+      height: 24px;
+      &:after {
+        width: 24px;
+        height: 24px;
+        border-width: 2px;
+      }
+    }
+  }
+
+  &.high {
+    background-color: #376caf;
+    border: none;
+    color: white;
+
+    &:hover,
+    &:focus {
+      background-color: #235696;
+    }
+    &:active:focus {
+      background-color: #123c72;
+      border-color: transparent;
+      color: white;
+      outline: none;
+    }
+  }
+  &.medium {
+    background-color: transparent;
+    border: 1px solid #376caf;
+    color: #376caf;
+
+    &:hover,
+    &:focus {
+      background-color: #c9ddf6;
+    }
+    &:active:focus {
+      background-color: #a2c4ef;
+      border-color: #376caf;
+      color: #376caf;
+      outline: none;
+    }
+  }
+  &.low {
+    background-color: transparent;
+    border: none;
+    color: #376caf;
+
+    &:hover,
+    &:focus {
+      background-color: #c9ddf6;
+    }
+    &:active:focus {
+      background-color: #a2c4ef;
+      border: none;
+      color: #376caf;
+      outline: none;
+    }
+  }
+  &.link {
+    background-color: transparent;
+    border: none;
+    color: #376caf;
+    &.btn.disabled {
+      background-color: transparent !important;
+    }
+    &:hover {
+      color: #235696;
+    }
+    &:active:focus {
+      background-color: transparent;
+      border: none;
+      color: #376caf;
+      outline: none;
+    }
+  }
+
+  &.size-small {
+    border-radius: 17px;
+    font-size: 14px;
+    line-height: 17px;
+    height: 33px;
+  }
+  &.size-medium {
+    border-radius: 29px;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: uppercase;
+    height: 58px;
+  }
+
+  &.btn[disabled] {
+    background-color: $slight-grey;
+    border: none;
+    color: $dark-grey;
+  }
+
+  &:focus,
+  &:active,
+  &:hover {
+    box-shadow: none;
+    outline: none;
+  }
+
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

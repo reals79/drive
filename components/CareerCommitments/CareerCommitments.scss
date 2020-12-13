@@ -1,0 +1,40 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.career-commitments {
+  margin-top: 15px;
+  .header {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .content {
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .line {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $slight-grey;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      img {
+        border-radius: 3px;
+      }
+    }
+    .see-all {
+      cursor: pointer;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      &.last {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

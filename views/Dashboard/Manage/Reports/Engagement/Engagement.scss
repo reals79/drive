@@ -1,0 +1,67 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.mng-engagement {
+  .engagement {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+    align-items: flex-end;
+
+    .edit {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 70px;
+    }
+  }
+  .no-records {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+  }
+  .core-pagination {
+    padding: 20px 0 10px 0;
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  .mng-engagement {
+    .ds-datepicker {
+      padding-top: 10px;
+    }
+    .card {
+      padding: 15px !important;
+    }
+    .edit {
+      flex: 0.4;
+    }
+  }
+}
+@media screen and (max-width: $screen-ssm) {
+  .mng-engagement {
+    .engagement {
+      padding: 0;
+      .list-item {
+        padding-bottom: 19px;
+      }
+      .edit {
+        margin-right: 5px;
+      }
+    }
+    .core-dropdown {
+      .core-dropdown-toggle {
+        .core-dropdown-label {
+          padding-left: 0;
+        }
+      }
+    }
+    .core-pagination {
+      justify-content: left;
+    }
+    .empty-message {
+      padding-bottom: 25px;
+    }
+  }
+}

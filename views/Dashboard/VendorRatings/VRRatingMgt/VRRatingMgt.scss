@@ -1,0 +1,34 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.super-admin-vrratingmgt {
+  .tab-content {
+    .tab-pane {
+      .card-content {
+        .core-input {
+          &-content {
+            .form-control {
+              width: 300px;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+    .core-pagination {
+      padding-bottom: 30px;
+    }
+  }
+
+  .card, .card-header, .card-bottom {
+    .w80 {
+      width: 80px;
+    }
+    .core-input {
+      &-content {
+        .form-control {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

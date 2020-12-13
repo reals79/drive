@@ -1,0 +1,48 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.individual-profile-about {
+  .card {
+    .contact-label,
+    .about-label {
+      width: 100px;
+    }
+
+    .core-input {
+      &-label {
+        min-width: 100px;
+      }
+      &-content {
+        .form-control {
+          min-width: 100px;
+          margin-left: 0 !important;
+        }
+      }
+    }
+
+    .core-dropdown-title {
+      min-width: 75px;
+    }
+
+    .profile-datepicker {
+      .dsl-m12 {
+        &.mt-1 {
+          min-width: 100px;
+        }
+      }
+      .ds-datepicker-content {
+        width: fit-content;
+      }
+    }
+
+    .profile-about {
+      word-break: break-all;
+    }
+    .profile-login {
+      min-height: 200px;
+      padding: 0px 180px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.lib-todo-scorecard {
+  .scorecard-detail,
+  .detail-list {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    min-height: 230px;
+    .card-item {
+      display: flex !important;
+      padding: 20px 0px;
+      border-bottom: 1px solid #e2e3e5;
+    }
+    :last-child {
+      border-bottom: none;
+    }
+  }
+
+  .settings-scorecard {
+    .accordion__item {
+      .accordion__body {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .input-field {
+    margin-bottom: 25px;
+
+    .core-input-label {
+      line-height: 20px;
+    }
+
+    .core-input-content {
+      .form-control {
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 0;
+      }
+      .clear {
+        right: 15px;
+      }
+      .delete {
+        display: none;
+      }
+    }
+  }
+
+  .track-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 120px;
+  }
+
+  .btn-save {
+    height: 36px;
+    padding: 0 20px;
+
+    &.btn[disabled] {
+      color: white;
+    }
+  }
+  .edit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 10px;
+  }
+}
+.btn-mr0 button {
+  margin-right: 0 !important;
+}
+.scorecard-quota-head {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-bottom: 1px solid $slight-grey !important;
+  margin-bottom: 25px;
+
+  .auto-height {
+    height: auto;
+  }
+}
+.scorecard-detail {
+  @media screen and (max-width: $screen-sm) {
+    .modal-body {
+      .d-sm-flex-5 {
+        flex: 5;
+      }
+    }
+  }
+}

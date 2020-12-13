@@ -1,0 +1,33 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url('/images/error.png');
+  background-size: cover;
+  height: 100vh;
+
+  .go-back {
+    background-color: transparent;
+    font-weight: 300;
+    width: 160px;
+    height: 40px;
+    &:focus {
+      border-color: $white;
+      color: $white;
+    }
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .error-code {
+    bottom: 20px;
+    position: absolute;
+  }
+  .z1 {
+    z-index: 1;
+  }
+}

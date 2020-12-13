@@ -1,0 +1,24 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.assignments-program-card {
+  background-color: white !important;
+  padding: 20px;
+
+  .card-item {
+    display: flex !important;
+    border-bottom: 1px solid #e0e0e0;
+    align-items: center;
+    padding: 10px 0px;
+  }
+
+  .edit {
+    width: 40px;
+    height: 100%;
+  }
+}
+@media screen and (max-width: $screen-ssm) {
+  .assignments-program-card {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

@@ -1,0 +1,18 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.view-more-pagination {
+  background-color: white;
+  border-radius: 5px;
+  .more-container {
+    width: 107px;
+    margin: 0 auto;
+    .pages {
+      padding: 3px;
+      cursor: pointer;
+      color: #376caf;
+      i {
+        padding-left: 5px;
+      }
+    }
+  }
+}

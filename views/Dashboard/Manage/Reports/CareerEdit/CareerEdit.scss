@@ -1,0 +1,18 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.mng-career-edit {
+  .no-levels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 20px;
+    padding: 30px;
+  }
+  .submit {
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    padding: 20px;
+  }
+}

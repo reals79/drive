@@ -1,0 +1,29 @@
+.ind-performance-reports {
+  .list-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin: 0 -20px;
+    border-bottom: 1px solid #e0e0e0;
+
+    .edit {
+      width: 20px;
+    }
+    &.list {
+      height: 80px;
+    }
+
+    &:hover {
+      background-color: #e7eff8;
+    }
+  }
+
+  .core-text {
+    input {
+      height: 30px;
+    }
+  }
+  .core-pagination {
+    padding: 20px 0 0 0;
+  }
+}

@@ -1,0 +1,38 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.career-pagination {
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #f5f5f5, 0 0 0 1px #f5f5f5 !important;
+  border-color: transparent !important;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  .right {
+    float: right;
+  }
+
+  .ui.inline.dropdown {
+    color: $primary;
+  }
+
+  .pages {
+    padding: 3px;
+    cursor: pointer;
+    color: #969faa;
+    &.active {
+      text-decoration: underline;
+      color: #000;
+    }
+  }
+
+  .current {
+    padding: 3px;
+    color: #969faa;
+    &.active {
+      color: #000;
+    }
+  }
+
+  .pages-left {
+    padding-left: 3px;
+  }
+}

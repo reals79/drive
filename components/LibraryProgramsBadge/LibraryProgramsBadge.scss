@@ -1,0 +1,67 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.lib-programs-badge {
+  background-color: white;
+  padding: 20px;
+
+  .settings-badge {
+    .accordion__item {
+      .accordion__body {
+        padding: 30px 0 0;
+      }
+    }
+  }
+
+  .badge-thumbnail {
+    width: 85px;
+    min-width: 85px;
+    height: 83px;
+    min-height: 83px;
+    cursor: pointer;
+
+    .icon {
+      height: 83px;
+      min-height: 83px;
+      background-color: #f2f3f4;
+
+      i {
+        font-size: 24px !important;
+      }
+    }
+
+    .image {
+      padding-top: 100%;
+    }
+  }
+
+  .input-field {
+    margin-bottom: 25px;
+
+    .core-input-label {
+      line-height: 20px;
+    }
+
+    .core-input-content {
+      .form-control {
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 0;
+      }
+      .clear {
+        right: 15px;
+      }
+      .delete {
+        display: none;
+      }
+    }
+  }
+
+  .btn-save {
+    height: 36px;
+    width: 103px;
+
+    &.btn[disabled] {
+      color: white;
+    }
+  }
+}

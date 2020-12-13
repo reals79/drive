@@ -1,0 +1,43 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.add-admin-modal {
+  .add-admin-search {
+    width: 100%;
+    padding: 7px;
+    position: relative;
+
+    input {
+      width: 100%;
+      padding: 0 0 0 35px;
+    }
+
+    i.fa-search {
+      position: absolute;
+      left: 15px;
+    }
+  }
+
+  .user-list {
+    max-height: 50vh;
+    overflow: auto;
+
+    .selected {
+      background-color: $light-blue;
+    }
+  
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: #fefefe;
+    }
+  
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      background-color: $light-grey;
+      outline: 1px solid slategrey;
+    }
+  }
+}

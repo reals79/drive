@@ -1,0 +1,264 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.vendor-home {
+  background-color: white;
+  .btn-cate {
+    background-color: white;
+    color: #376caf;
+    border-radius: 5px;
+    border: 1px solid #376caf;
+  }
+  core-button.high:hover {
+    background-color: white;
+  }
+  .title-color {
+    color: rgb(85, 95, 104);
+  }
+  .basic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .video-section {
+    min-height: 150px;
+  }
+  .contact {
+    .head {
+      width: 40px;
+    }
+  }
+  .manager {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    border: 1px solid #969faa;
+    margin-right: 15px;
+    width: 36px;
+    height: 36px;
+  }
+  .pros-cons {
+    display: flex;
+    .head {
+      width: 40px;
+    }
+  }
+  .categories {
+    background-repeat: no-repeat;
+    background-image: url('/images/vendor_ratings.png');
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 340px;
+    background-size: cover;
+    .inner-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      button {
+        border-radius: 5px;
+      }
+      .core-button {
+        border-color: white;
+        color: white;
+        margin: 0 10px;
+        min-width: 112px;
+      }
+    }
+  }
+  .popular-category {
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+    width: 175px !important;
+    height: 112px;
+  }
+  .popular-categories {
+    .items {
+      .contents {
+        border-radius: 5px;
+        &:hover {
+          background-color: #e7eff8;
+          i {
+            color: #0a1520 !important;
+          }
+          .popular-category-title {
+            color: #0a1520;
+          }
+        }
+        i {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+  .how-vendor {
+    background-repeat: no-repeat;
+    background-image: url('/images/vendor_ratings_vendor.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    .inner-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 150px;
+        .circle {
+          width: 62px;
+          height: 62px;
+          border-radius: 50px;
+          border: 1px solid white;
+          background-color: transparent;
+        }
+      }
+
+      .core-button {
+        border-color: white;
+        color: white;
+        margin: 0 10px;
+        min-width: 160px;
+      }
+      .add-vendor {
+        color: $middle-grey;
+        background-color: white;
+      }
+      button {
+        border-radius: 5px;
+      }
+    }
+  }
+  .dealer-satisfaction {
+    background-repeat: no-repeat;
+    background-image: url('/images/vendor_ratings_DSA.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    .inner-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      .desc {
+        padding-left: 30%;
+        padding-right: 30%;
+        text-align: center;
+      }
+      .read-more {
+        border-color: white;
+        color: white;
+      }
+    }
+  }
+  .popular-product {
+    min-width: 135px;
+    min-height: 190px;
+    text-align: center;
+    justify-items: center;
+    display: inline-grid;
+    .head {
+      border: 1px solid #c3c7cc;
+      border-radius: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 110px;
+      height: 110px;
+    }
+  }
+  .cate-btn {
+    button :active {
+      color: #2b5488;
+      background-color: unset;
+      border-color: unset;
+    }
+  }
+  .core-button.size-small {
+    border-radius: 5px;
+  }
+  .rate-vendor {
+    background-image: url('/images/bgBottomVendor.png');
+    border-radius: 5px;
+    padding: 60px 0;
+    position: relative;
+    width: 100%;
+    .rate-vendor-card {
+      width: 555px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 30px;
+      @media screen and (max-width: $screen-sm) {
+        width: 90%;
+        max-width: 555px;
+      }
+    }
+    .rate-vendor-bottom {
+      .rate-btn {
+        button {
+          height: auto;
+          text-decoration: underline;
+          &:active:focus {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+    &-dropdown {
+      .core-dropdown-title {
+        width: 80px;
+      }
+    }
+
+    &-rating {
+      > span {
+        width: 80px !important;
+      }
+    }
+
+    &-status {
+      width: 125px;
+      height: 40px;
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $slight;
+      border-radius: 5px;
+    }
+
+    &-recommend-rate {
+      width: 30px;
+      height: 30px;
+      margin: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $middle-grey;
+      font-size: 12px;
+      border-radius: 15px;
+      border: 1px solid $light-grey;
+      &.active {
+        color: $white;
+        background-color: $primary;
+      }
+    }
+  }
+}

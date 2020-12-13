@@ -1,0 +1,54 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.blog-advanced-search {
+  margin-bottom: auto;
+  position: relative;
+  .search-toggle {
+    display: flex;
+    height: 100%;
+  }
+  .search-popup {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -2px 2px 10px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    position: absolute;
+    left: auto !important;
+    right: 10px;
+    top: 15px;
+    width: 475px;
+    z-index: 999;
+    overflow-y: auto;
+    .search-body {
+      padding: 20px 10px;
+
+      .option-label {
+        color: $dark-grey;
+        padding: 5px 0;
+      }
+
+      .option-item {
+        color: $dark-grey;
+        font-weight: 300;
+        padding: 5px 10px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $light-blue;
+        }
+
+        &.active {
+          background-color: $light-blue;
+        }
+      }
+
+      .border-r {
+        border-right: 1px solid $slight-grey;
+      }
+    }
+    .btn-apply {
+      padding: 7px 30px;
+      outline: none;
+    }
+  }
+}

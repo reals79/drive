@@ -1,0 +1,88 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.career-slider {
+  .item {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+
+    .line {
+      .form-control {
+        text-align: center;
+      }
+      .header-title {
+        text-align: left;
+      }
+    }
+
+    .row-item {
+      display: flex;
+      align-items: center;
+      min-height: 55px;
+
+      .blue-text {
+        color: $main-blue;
+      }
+
+      &:nth-child(even) {
+        background: $light;
+      }
+
+      .perform-actual {
+        max-width: 50px;
+      }
+    }
+
+    .habits-block {
+      .habits-line {
+        padding-left: 15px;
+        cursor: pointer;
+        min-height: 50px;
+        border-top: 0.5px solid rgba($color: $light-grey, $alpha: 0.1);
+
+        &:last-child {
+          border-bottom: 0.5px solid rgba($color: $light-grey, $alpha: 0.1);
+        }
+      }
+    }
+
+    .development-block {
+      .image-wrapper {
+        width: 110px;
+        padding: 10px;
+        padding-left: 0;
+
+        .thumb-image {
+          width: 100%;
+          height: 0;
+          padding-top: 55%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .slick-slider {
+    .slick-prev {
+      left: 100px;
+      top: 40px;
+      z-index: 9;
+      &::before {
+        display: none;
+      }
+    }
+
+    .slick-next {
+      right: 100px;
+      top: 40px;
+      z-index: 9;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

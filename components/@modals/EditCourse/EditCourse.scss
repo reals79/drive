@@ -1,0 +1,80 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.edit-course-modal {
+  overflow: hidden;
+  .modal-header {
+    background-color: $main-blue;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+  }
+  .close {
+    color: white;
+    opacity: 1;
+  }
+
+  .date-box {
+    display: inline-flex;
+    input {
+      border: none;
+      line-height: 24px;
+      width: 100%;
+      &:focus {
+        outline: none;
+      }
+    }
+    i {
+      line-height: 24px;
+    }
+    .fal {
+      font-weight: 600;
+      color: blue;
+    }
+  }
+  .modal-body {
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .form-control {
+      height: 24px;
+    }
+    .course-input {
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+      border-bottom: 1px solid $light;
+      padding: 0;
+      min-height: 35px;
+      &.desc {
+        min-height: 80px;
+      }
+    }
+    textarea {
+      padding: 0;
+      height: unset !important;
+      border: none;
+      box-shadow: unset;
+      resize: none;
+    }
+    input,
+    select {
+      padding: 0;
+      border: none;
+      box-shadow: none;
+    }
+    .form-group {
+      input::placeholder {
+        color: $black !important;
+      }
+      textarea::placeholder {
+        color: $black !important;
+      }
+    }
+  }
+
+  .modal-footer {
+    border-top: none;
+    text-align: center;
+  }
+}

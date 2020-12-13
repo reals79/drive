@@ -1,0 +1,21 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.comment-modal {
+  @media (min-width: 768px) {
+    .modal-dialog {
+      width: 460px;
+      margin-top: 10%;
+    }
+  }
+  *:focus {
+    outline: 0 !important;
+  }
+
+  .modal-header {
+    border: none;
+  }
+
+  .modal-body {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,10 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.dev-company-roster {
+  .record-item {
+    &:nth-last-child(2) {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}

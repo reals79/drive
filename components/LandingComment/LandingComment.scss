@@ -1,0 +1,20 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.landing-comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .comment-detail {
+    height: 90px;
+    overflow: auto;
+  }
+
+  .commentor-detail {
+    max-width: 170px;
+  }
+
+  .l-height-22 {
+    line-height: 22px;
+  }
+}

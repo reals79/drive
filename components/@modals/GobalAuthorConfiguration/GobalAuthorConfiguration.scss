@@ -1,0 +1,23 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.global-author-configuration-modal {
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-body {
+    background-color: white;
+    padding: 20px 30px;
+    .core-input {
+      &-label {
+        margin-left: 15px;
+      }
+    }
+    span {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+}

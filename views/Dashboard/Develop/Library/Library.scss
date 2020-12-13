@@ -1,0 +1,61 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.dev-library-todo,
+.dev-library-programs,
+.dev-library-training {
+  .bg-white {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .core-filter {
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: $screen-ssm) {
+    .bg-white {
+      display: flex;
+      padding-left: 15px;
+      padding-right: unset;
+    }
+    .advanced-search {
+      padding-top: 10px;
+    }
+    .core-pagination {
+      justify-content: left;
+      padding-bottom: 20px;
+    }
+    .custom-dropdown-mobile {
+      .core-dropdown .core-dropdown-toggle.horizontal .core-dropdown-label {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.library-track-card,
+.library-module-card,
+.library-course-card {
+  @media screen and (max-width: $screen-ssm) {
+    .lib-content {
+      .edit {
+        padding: 0;
+      }
+      .truncate-one {
+        display: none;
+      }
+      .courses-wrap {
+        flex-direction: column;
+        .courses,
+        .modules,
+        .assigned {
+          display: flex;
+          .no-wrap {
+            margin-right: 5px;
+          }
+        }
+      }
+      .text-wrap-ssm {
+        width: 12em;
+      }
+    }
+  }
+}

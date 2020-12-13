@@ -1,0 +1,138 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.library-module-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  position: relative;
+  padding: 0 20px;
+
+  .lib-content {
+    display: flex;
+    flex: 1;
+    border-top: 1px solid $border-grey;
+    padding: 20px 0;
+    .module-content {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      margin-left: 10px;
+    }
+    .edit {
+      display: flex;
+      align-items: center;
+      padding: 20px 15px;
+      cursor: pointer;
+    }
+  }
+  .title-font {
+    color: #676767;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    margin-bottom: 5px;
+  }
+
+  .quill {
+    position: relative;
+
+    .ql-toolbar {
+      padding: unset;
+      border: none;
+      box-sizing: unset;
+      text-align: end;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      z-index: 9;
+      background: transparent;
+
+      .ql-formats {
+        position: relative;
+        align-items: center;
+      }
+    }
+    .ql-container {
+      border: none;
+
+      .ql-editor {
+        line-height: 3.5;
+        background: #f6f7f8;
+        border-radius: 4px;
+        padding: 4px 10px;
+        min-height: 70px;
+
+        p {
+          font-weight: 300;
+          font-family: Ro;
+          font-size: 16px;
+          color: #495057;
+        }
+
+        &:before {
+          top: 0;
+          font-weight: 300;
+          font-family: Roboto;
+          font-style: unset !important;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .detail-content {
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .detail-content,
+  .modules-content {
+    .module-input,
+    .module-text {
+      .form-control {
+        margin-right: 0;
+      }
+      .clear {
+        display: none;
+      }
+      .delete {
+        display: none;
+      }
+    }
+    .module-text {
+      height: 105px;
+      textarea {
+        height: 100%;
+      }
+    }
+    .video-url {
+      flex: 1;
+    }
+    .question-circle {
+      background-color: $light-grey;
+      width: 20px;
+      height: 20px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  }
+}
+@media screen and (max-width: $screen-ssm) {
+  .library-module-card {
+    .lib-content {
+      .module-content {
+        display: block;
+      }
+    }
+  }
+}

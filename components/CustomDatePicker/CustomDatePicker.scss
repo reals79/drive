@@ -1,0 +1,91 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.custom-datepicker {
+  .custom-input {
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    padding: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .react-datepicker-popper {
+    .react-datepicker {
+      font-size: 1em;
+      color: $dark-grey;
+      border: none;
+      box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.1);
+
+      .react-datepicker__triangle {
+        display: none;
+      }
+
+      .react-datepicker__header {
+        padding-top: 0.8em;
+        background-color: white;
+
+        .react-datepicker__day-name {
+          color: $slight-grey;
+        }
+      }
+
+      .react-datepicker__month {
+        margin: 0.4em 1em;
+      }
+
+      .react-datepicker__day-name,
+      .react-datepicker__day {
+        color: $dark-grey;
+        width: 1.9em;
+        line-height: 1.9em;
+        margin: 0.166em;
+
+        &.react-datepicker__day--selected,
+        &.react-datepicker__day--keyboard-selected {
+          color: $primary !important;
+          background-color: #d7e6ff;
+          border-radius: 1em;
+        }
+
+        &.react-datepicker__day--disabled {
+          color: $light-grey;
+        }
+      }
+
+      .react-datepicker__current-month {
+        font-size: 1em;
+        line-height: 33px;
+      }
+
+      .react-datepicker__navigation {
+        top: 1em;
+        line-height: 1.7em;
+        border: 0.45em solid transparent;
+      }
+
+      .react-datepicker__navigation--previous {
+        background: url('/images/icons/arrow-left.svg') no-repeat;
+        height: 30px;
+        border: none;
+        left: 1em;
+      }
+
+      .react-datepicker__navigation--next {
+        background: url('/images/icons/arrow-right.svg') no-repeat;
+        height: 30px;
+        border: none;
+        right: 1em;
+      }
+    }
+  }
+
+  &.right {
+    .react-datepicker-popper {
+      right: 0;
+      left: auto !important;
+    }
+  }
+}

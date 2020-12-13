@@ -1,0 +1,48 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.vendor-rating-company {
+  .btn-vendor-ratings {
+    padding: 0;
+    padding-right: 5px;
+    color: #000;
+  }
+
+  .vendor-company-search,
+  .vendor-company-alpha-list,
+  .vendor-company-list {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+
+    .contact-detail {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
+  .vendor-bottom-border {
+    border-bottom: 2px solid #ebebeb;
+  }
+  .avatar-small {
+    width: 90px !important;
+    height: 90px !important;
+    min-width: 90px !important;
+    min-height: 90px !important;
+    background-color: #0a1520;
+  }
+  .box-detail {
+    max-height: 360px;
+    overflow-x: hidden;
+    padding: 10px 20px 20px;
+    @media screen and (max-width: $screen-sm) {
+      max-height: 300px;
+    }
+  }
+  .btn-search {
+    border: 1px solid #376caf;
+    padding: 8px 15px;
+    border-radius: 3px;
+  }
+}

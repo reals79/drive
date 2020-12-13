@@ -1,0 +1,206 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.learn-feed-grid {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 8px;
+  cursor: pointer;
+
+  .mx-height {
+    max-height: 326px;
+  }
+  .feed-description {
+    overflow: hidden;
+  }
+  .custom-checkbox {
+    line-height: unset;
+  }
+  &.completed {
+    .course-title {
+      p:last-child {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  .due-date {
+    min-width: 90px;
+  }
+
+  .mheader {
+    display: flex;
+    justify-content: space-between;
+    .dropdown {
+      .dropdown-toggle {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    p {
+      margin-left: 0;
+      margin-bottom: 10px;
+      .label {
+        color: #969faa;
+        font-size: 13px;
+        font-family: 'Roboto';
+        font-weight: 100;
+        text-transform: none;
+      }
+      .value {
+        font-size: 18px !important;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    }
+  }
+  .mcontent {
+    height: 340px;
+    overflow: auto;
+  }
+
+  .fields {
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    border: 1px solid rgba($color: #c3c7cc, $alpha: 0.25);
+    border-radius: 5px;
+    padding: 10px 20px 10px 15px;
+    margin-bottom: 2px;
+    min-height: 80px;
+    max-height: 120px;
+
+    &:hover,
+    &:focus {
+      background-color: #f1f5fb;
+    }
+
+    &.disabled {
+      opacity: 0.4;
+    }
+
+    .fields-status {
+      width: 30px;
+    }
+
+    .fields-content {
+      margin-left: 10px;
+      > span {
+        display: flex;
+        align-items: center;
+      }
+      .turncate-lengthy-name {
+        max-height: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    height: 100%;
+
+    .quiz-mark {
+      display: grid;
+      text-align: center;
+      i {
+        font-size: 60px !important;
+      }
+    }
+  }
+  .line-height-22 {
+    line-height: 22px !important;
+  }
+}
+@media screen and (max-width: $screen-sm) {
+  .learn-feed-grid {
+    .custom-row {
+      .mheader {
+        .cursor-pointer {
+          display: flex;
+          margin-right: unset !important;
+          margin-left: auto;
+        }
+      }
+      .tab-device {
+        display: flex;
+        max-width: 75%;
+        flex-basis: unset;
+      }
+      .custom-tab-width {
+        max-width: 25%;
+        flex-basis: unset;
+      }
+      .due-date {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        min-width: 102px;
+      }
+    }
+  }
+}
+@media screen and (max-width: $screen-ssm) {
+  .learn-feed-grid {
+    padding: 0;
+    .fields {
+      padding-left: 0;
+    }
+    .custom-row {
+      display: flex;
+      flex-direction: column;
+      .mheader {
+        .cursor-pointer {
+          display: none;
+        }
+      }
+      .tab-device {
+        display: flex;
+        max-width: 100%;
+        flex-basis: unset;
+      }
+      .custom-tab-width {
+        max-width: 100%;
+        flex-basis: unset;
+        .mheader {
+          display: flex;
+          justify-content: space-between;
+          .mobile-tab {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+      .course-title {
+        margin-top: 4px;
+        .dsl-b16 {
+          font-size: 14px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          min-width: 165px;
+          max-width: 210px;
+        }
+      }
+      .due-date {
+        margin-top: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding-right: 15px;
+        .dsl-b16 {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

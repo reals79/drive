@@ -1,0 +1,17 @@
+@import '~/layouts/Dashboard/theme.scss';
+
+.quota-reports-details {
+  .list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    border-bottom: 1px solid #e0e0e0;
+
+    &:hover {
+      background-color: #e7eff8;
+      padding: 10px 25px;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+}
